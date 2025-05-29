@@ -1,0 +1,103 @@
+/* src/components/MenuItemCard/MenuItemCard.module.css */
+
+.menuItemCard {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0; /* Padding vertical ajustado */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Borde más sutil y semitransparente para adaptarse al modo oscuro */
+  transition: background-color 0.2s ease-in-out;
+  cursor: default;
+}
+
+.menuItemCard:last-child {
+  border-bottom: none;
+}
+
+/* Se puede añadir un sutil efecto hover para interactividad */
+.menuItemCard:hover {
+  background-color: rgba(0, 0, 0, 0.02); /* Un fondo muy ligero al pasar el mouse */
+}
+/* En modo oscuro, este hover debería ser un gris muy oscuro */
+@media (prefers-color-scheme: dark) {
+  .menuItemCard:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+
+.itemImage {
+  display: block;
+  width: 65px; /* Imagen ligeramente más grande en la tarjeta */
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 18px; /* Más espacio entre imagen y texto */
+  flex-shrink: 0;
+}
+
+.itemDetails {
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemNameAndDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.itemName {
+  font-size: 1.05em; /* Tamaño de fuente ligeramente más grande para el nombre */
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: var(--color-texto-principal);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.itemDescription {
+  font-size: 0.85em; /* Tamaño de fuente ligeramente más grande para la descripción */
+  color: var(--color-texto-secundario);
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-style: normal;
+}
+
+.itemPrice {
+  font-size: 1.05em; /* Mismo tamaño que el nombre para equilibrio */
+  font-weight: 600; /* Un poco más de bold para el precio */
+  color: var(--color-texto-principal);
+  text-align: right;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+  flex-shrink: 0;
+}
+
+/* --- Media Queries --- */
+@media (min-width: 768px) {
+  .itemImage {
+    width: 75px; /* Más grande en desktop */
+    height: 75px;
+    margin-right: 20px;
+  }
+  .itemName {
+    font-size: 1.15em;
+  }
+  .itemDescription {
+    font-size: 0.9em;
+  }
+  .itemPrice {
+    font-size: 1.15em;
+  }
+}

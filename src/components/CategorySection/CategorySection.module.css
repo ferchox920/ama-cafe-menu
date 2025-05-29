@@ -1,0 +1,73 @@
+/* src/components/CategorySection/CategorySection.module.css */
+
+.categorySection {
+  margin-bottom: 45px; /* Más espacio entre categorías */
+  padding: 0 5px;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; /* Más espacio entre el header de categoría y los ítems */
+}
+
+.categoryIsotipo {
+  width: 40px; /* Tamaño ligeramente más grande para el isotipo */
+  height: 40px;
+  object-fit: contain;
+  margin-right: 12px; /* Ajuste de margen */
+  flex-shrink: 0;
+}
+
+.categoryTitle {
+  text-align: left;
+  font-size: 1.9em; /* Título de categoría más prominente */
+  color: var(--color-azul-oscuro);
+  padding-bottom: 0;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.1; /* Asegurar buena legibilidad y alineación */
+}
+
+.itemsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px; /* Espacio ajustado entre ítems */
+}
+
+/* --- Media Queries --- */
+@media (min-width: 768px) {
+  .categorySection {
+    padding: 0 10px;
+    margin-bottom: 55px;
+  }
+  .categoryIsotipo {
+    width: 48px; /* Más grande en desktop */
+    height: 48px;
+    margin-right: 15px;
+  }
+  .categoryTitle {
+    font-size: 2.2em; /* Título de categoría más grande en desktop */
+  }
+  .itemsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* 2 o más columnas en desktop */
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .categoryIsotipo {
+    width: 52px;
+    height: 52px;
+  }
+  .categoryTitle {
+    font-size: 2.4em;
+  }
+  .itemsGrid {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}

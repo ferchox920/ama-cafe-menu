@@ -1,0 +1,101 @@
+/* src/App.module.css */
+
+.appContainer {
+  max-width: 900px; /* Ancho máximo para el contenido */
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden; /* Previene scroll horizontal */
+  background-color: var(--color-background-crema); /* Fondo principal */
+}
+
+.appHeader {
+  text-align: center;
+  padding: 30px 20px 20px; /* Ajuste de padding: top, right/left, bottom */
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Añadir un sutil borde redondeado inferior, como el menú original tiene una "onda" */
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px;
+}
+
+.appLogo {
+  width: 180px; /* Logo más grande para mobile */
+  height: auto;
+  margin-bottom: 12px; /* Espacio entre logo y título */
+}
+
+.appTitle {
+  font-size: 2.5em; /* Tamaño del título ajustado */
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.appSlogan {
+  font-size: 1.05em; /* Ligero aumento para el eslogan */
+  opacity: 0.95;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  line-height: 1.4; /* Mejorar legibilidad */
+}
+
+.menuMain {
+  padding: 0 20px; /* Más padding horizontal para el contenido principal en mobile */
+  background-color: var(--color-background-crema);
+}
+
+.appFooter {
+  text-align: center;
+  margin-top: 60px; /* Más espacio antes del footer */
+  padding: 30px 20px;
+  font-size: 0.85em;
+  color: var(--color-texto-secundario);
+  background-color: var(--color-background-crema);
+  border-top: 1px solid #EAEAEA;
+  border-top-left-radius: 15px; /* Bordes redondeados superiores para el footer */
+  border-top-right-radius: 15px;
+}
+
+.appFooter p {
+    margin: 5px 0;
+}
+
+.appFooter a {
+    color: var(--color-azul-oscuro);
+    font-weight: 500;
+}
+
+.appFooter a:hover {
+    color: var(--color-azul-claro-iconos);
+}
+
+
+/* --- Media Queries --- */
+@media (min-width: 768px) {
+  .appHeader {
+    padding: 40px 30px 25px; /* Más padding para desktop */
+  }
+  .appLogo {
+    width: 220px; /* Logo aún más grande en desktop */
+    margin-bottom: 18px;
+  }
+  .appTitle {
+    font-size: 3em; /* Título más grande */
+  }
+  .appSlogan {
+    font-size: 1.2em;
+  }
+  .menuMain {
+    padding: 0 30px; /* Mayor padding horizontal en desktop */
+  }
+  .appFooter {
+    margin-top: 80px;
+    padding: 40px 30px;
+  }
+}

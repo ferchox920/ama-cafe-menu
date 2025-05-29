@@ -1,0 +1,112 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+
+/* ========================================= */
+/* Variables de Color (Modo CLARO por defecto) */
+/* ========================================= */
+:root {
+  /* Paleta de Ama Café - Modo CLARO */
+  --color-background-crema: #F8F5D2;
+  --color-azul-oscuro: #344E9C;
+  --color-azul-claro-iconos: #89CFF0;
+  --color-texto-principal: #222222;
+  --color-texto-secundario: #555555;
+  --color-blanco: #FFFFFF;
+  --color-sombra-clara: rgba(0, 0, 0, 0.1);
+
+  /* Propiedades de diseño global */
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  /* Por defecto, permitimos que el navegador decida (será light si no hay prefers-color-scheme) */
+  color-scheme: light; 
+
+  /* Colores de fondo y texto por defecto (Modo CLARO) */
+  background-color: var(--color-background-crema);
+  color: var(--color-texto-principal);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================================================= */
+/* Forzar Modo CLARO en DESKTOP (pantallas grandes)                    */
+/* Esto sobrescribe la preferencia de "prefers-color-scheme" en desktop */
+/* ========================================================================= */
+@media (min-width: 768px) { /* Por ejemplo, para tablets y desktops */
+  :root {
+    color-scheme: light !important; /* Forzar light en desktop */
+    background-color: var(--color-background-crema) !important;
+    color: var(--color-texto-principal) !important;
+  }
+  body {
+    background-color: var(--color-background-crema) !important;
+    color: var(--color-texto-principal) !important;
+  }
+  html {
+    background-color: var(--color-background-crema) !important;
+  }
+}
+
+
+/* ========================================= */
+/* Variables de Color (Modo OSCURO)    */
+/* Se aplica SÓLO en pantallas pequeñas (móviles) si el usuario lo prefiere */
+/* ========================================= */
+@media (max-width: 767px) and (prefers-color-scheme: dark) { /* Solo para móviles en modo oscuro */
+  :root {
+    /* Paleta de Ama Café - Modo OSCURO */
+    --color-background-crema: #1A1A1A; /* Fondo principal oscuro */
+    --color-azul-oscuro: #5C7CCD;    /* Azul que resalte sobre oscuro */
+    --color-azul-claro-iconos: #60B7E0; 
+    --color-texto-principal: #E0E0E0; /* Texto claro principal */
+    --color-texto-secundario: #AAAAAA; /* Texto gris claro para descripciones */
+    --color-blanco: #333333; /* Gris oscuro para "blanco" de fondos */
+    --color-sombra-clara: rgba(255, 255, 255, 0.1); 
+  }
+
+  /* Aseguramos que el body y html sigan las variables del modo oscuro en mobile */
+  body {
+    background-color: var(--color-background-crema) !important;
+    color: var(--color-texto-principal) !important;
+  }
+  html {
+      background-color: var(--color-background-crema) !important;
+  }
+}
+
+/* ========================================= */
+/* Estilos Globales y de Elementos     */
+/* ========================================= */
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* Estos colores se toman de :root que ya fue definido según el tema */
+  background-color: var(--color-background-crema); 
+  color: var(--color-texto-principal);
+  overflow-x: hidden;
+}
+
+html { /* Asegurar que el html también tenga el color de fondo para evitar barras blancas */
+    background-color: var(--color-background-crema);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  color: var(--color-azul-oscuro);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-azul-oscuro);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-azul-claro-iconos);
+}
