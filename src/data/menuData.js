@@ -22,11 +22,10 @@ import tostadoImg from '../assets/images/products/Tostado.png';
 import teVerdeImg from '../assets/images/products/TeVerde.png';
 import teNegroImg from '../assets/images/products/TeNegro.png';
 import teMentaImg from '../assets/images/products/TeMenta.png';
-import matchaImg from '../assets/images/products/Matcha.png';
 import teChaiImg from '../assets/images/products/TeC.png'; // 'TeC.png' para Té de Chai
 import mateCImg from '../assets/images/products/MateC.png'; // 'MateC.png' para Hierba para mate con Vínculos
 import chocolateCalienteImg from '../assets/images/products/Chocolate.png';
-// No se encontró imagen para Matcha, usaremos cafeGenericoImg
+import matchaImg from '../assets/images/products/Matcha.png'; // ¡Ahora sí tenemos Matcha!
 
 // Importaciones de imágenes de APOYOS EMOCIONALES DULCES (todas específicas)
 import budinZImg from '../assets/images/products/BudinZ.png'; // Budín de zanahoria
@@ -112,13 +111,13 @@ const menuData = [
     category: "Apoyos emocionales salados",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-8", name: "Medialunas de manteca con Pasión", description: "Para despertar tus deseos más profundos.", price: "$10.000", image: medialunasMantecaImg },
-      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Un clásico reconfortante hecho con cariño.", price: "$10.000", image: medialunaJQImg },
-      { id: "prod-10", name: "Medialunas de grasa con Cariño", description: "Tradición y afecto en cada bocado.", price: "$10.000", image: medialunasGImg },
-      { id: "prod-11", name: "Tequeños con Refuerzo Positivo", description: "Pequeñas alegrías que te impulsan.", price: "$15.000", image: tequenosImg },
-      { id: "prod-12", name: "Cachito con Regulación", description: "Para encontrar el equilibrio en tu día.", price: "$10.000", image: cachitoImg },
+      { id: "prod-8", name: "Medialunas de manteca con Pasión", description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.", price: "$10.000", image: medialunasMantecaImg },
+      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$10.000", image: medialunaJQImg },
+      { id: "prod-10", name: "Medialunas de grasa con Cariño", description: "Salada, hojaldrada y dorada. Con ese sabor clásico que nunca falla.", price: "$10.000", image: medialunasGImg },
+      { id: "prod-11", name: "Tequeños con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$15.000", image: tequenosImg },
+      { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$10.000", image: cachitoImg },
       { id: "prod-13", name: "Scon de queso con Experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$8.000", image: sconQuesoImg },
-      { id: "prod-14", name: "Tostado con Imaginación", description: "Crea tu propia combinación de sabores.", price: "$9.000", image: tostadoImg }
+      { id: "prod-14", name: "Tostado con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$9.000", image: tostadoImg }
     ]
   },
   {
@@ -126,11 +125,11 @@ const menuData = [
     category: "Bebidas calientes",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-15", name: "Té verde con Bienestar", description: "Armonía y salud en cada sorbo.", price: "$10.000", image: teVerdeImg },
-      { id: "prod-16", name: "Té negro con Alma", description: "Profundidad y carácter para conectar contigo.", price: "$10.000", image: teNegroImg },
-      { id: "prod-17", name: "Té de menta con Alegría", description: "Frescura y optimismo para tu día.", price: "$10.000", image: teMentaImg },
-      { id: "prod-18", name: "Té de Chai con Paz", description: "Calma y serenidad en una mezcla especiada.", price: "$10.000", image: teChaiImg },
-      { id: "prod-19", name: "Matcha con Concentración", description: "Enfoque y energía para tus metas.", price: "$10.000", image: matchaImg }, // Utiliza la imagen genérica
+      { id: "prod-15", name: "Té verde con Bienestar", description: "Infusión suave y natural. Liviano y con un toque herbal.", price: "$10.000", image: teVerdeImg },
+      { id: "prod-16", name: "Té negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$10.000", image: teNegroImg },
+      { id: "prod-17", name: "Té de menta con Alegría", description: "Refrescante y aromático. Perfecto para después de comer o para relajar.", price: "$10.000", image: teMentaImg },
+      { id: "prod-18", name: "Té de Chai con Paz", description: "Infusión especiada con notas de canela, clavo y jengibre. Aromático y cálido.", price: "$10.000", image: teChaiImg },
+      { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$10.000", image: matchaImg }, // ¡Ahora con imagen de Matcha!
       { id: "prod-20", name: "Hierba para mate con Vínculos", description: "Para compartir y fortalecer lazos.", price: "$10.000", image: mateCImg },
       { id: "prod-21", name: "Chocolate caliente con Claridad", description: "Dulzura que ilumina tus ideas.", price: "$3.000", image: chocolateCalienteImg }
     ]
@@ -140,13 +139,13 @@ const menuData = [
     category: "Apoyos emocionales dulces",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-22", name: "Budín de zanahoria con Expresión", description: "Libera tu creatividad con cada bocado.", price: "$10.000", image: budinZImg },
-      { id: "prod-23", name: "Brownie con Autocuidado", description: "Un mimo chocolatoso para ti.", price: "$10.000", image: browieImg },
-      { id: "prod-24", name: "Pie de limón con Validación", description: "Reconoce tus emociones con un toque cítrico.", price: "$10.000", image: pieLImg },
-      { id: "prod-25", name: "Alfajor con Apego Seguro", description: "Dulzura que te conecta con la confianza.", price: "$10.000", image: alfajorImg },
-      { id: "prod-26", name: "Cheesecake de frutos rojos con Mimo", description: "Delicadeza y cuidado en cada porción.", price: "$10.000", image: cheesecakeFRImg },
-      { id: "prod-27", name: "Rol de canela con Autoestima", description: "Para recordarte lo valioso que eres.", price: "$10.000", image: rolCImg },
-      { id: "prod-28", name: "Galletitas con chispas de chocolate con Análisis", description: "Descubre los pequeños detalles que te hacen feliz.", price: "$10.000", image: galletitasCCImg }
+      { id: "prod-22", name: "Budín de zanahoria con Expresión", description: "Bizcocho suave con zanahoria rallada, nueces y un toque de canela. Dulce, húmedo y lleno de sabor.", price: "$10.000", image: budinZImg },
+      { id: "prod-23", name: "Brownie con Autocuidado", description: "Cuadrado de chocolate intenso, con textura densa y corazón suave. Ideal para los amantes del chocolate.", price: "$10.000", image: browieImg },
+      { id: "prod-24", name: "Pie de limón con Validación", description: "Base crocante, relleno cremoso de limón y merengue por encima. Equilibrio perfecto entre dulce y ácido.", price: "$10.000", image: pieLImg },
+      { id: "prod-25", name: "Alfajor con Apego Seguro", description: "Dos tapas suaves rellenas con dulce de leche cubiertas de azúcar impalpable.", price: "$10.000", image: alfajorImg },
+      { id: "prod-26", name: "Cheesecake de frutos rojos con Mimo", description: "Tarta cremosa con base de galleta y cobertura de frutillas. Fresca y suave.", price: "$10.000", image: cheesecakeFRImg },
+      { id: "prod-27", name: "Rol de canela con Autoestima", description: "Masa tierna con relleno de canela y azúcar, coronado con glaseado. Dulce, aromático y muy tentador.", price: "$10.000", image: rolCImg },
+      { id: "prod-28", name: "Galletitas con chispas de chocolate con Análisis", description: "Clásicas, crocantes por fuera y suaves por dentro. Llenas de chispas de chocolate.", price: "$10.000", image: galletitasCCImg }
     ]
   },
   {
@@ -154,13 +153,13 @@ const menuData = [
     category: "Bebidas frías",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Una pausa refrescante para liberar tensiones.", price: "$10.000", image: frappuccinoImg },
-      { id: "prod-30", name: "Frappé de Ananá con Dopamina", description: "Alegría tropical en cada sorbo.", price: "$3.000", image: frapeAnanaImg },
-      { id: "prod-31", name: "Frappé de Frutilla Sensorial", description: "Conecta con tus sentidos y disfruta el momento.", price: "$10.000", image: frappeFrutillaImg },
-      { id: "prod-32", name: "Frappé de Limón Anti Estrés", description: "Frescura cítrica para calmar la mente.", price: "$8.900", image: frappeLImg },
+      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$10.000", image: frappuccinoImg },
+      { id: "prod-30", name: "Frappé de Ananá con Dopamina", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$3.000", image: frapeAnanaImg },
+      { id: "prod-31", name: "Frappé de Frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$10.000", image: frappeFrutillaImg },
+      { id: "prod-32", name: "Frappé de Limón Anti Estrés", description: "Bebida helada, cítrica y refrescante.", price: "$8.900", image: frappeLImg },
       { id: "prod-33", name: "Agua sin gas con Regulación", description: "Hidratación simple para encontrar tu equilibrio.", price: "$3.000", image: aguaImg },
       { id: "prod-34", name: "Agua con gas sin Represión", description: "Burbujas de liberación y frescura.", price: "$4.500", image: aguaGImg },
-      { id: "prod-35", name: "Milkshakes con Serotonina", description: "Dulzura cremosa para elevar tu ánimo.", price: "$3.900", image: milkshakesImg }
+      { id: "prod-35", name: "Milkshakes con Serotonina", description: "Batido frío con leche y mucho chocolate. Cremoso y dulce.", price: "$3.900", image: milkshakesImg }
     ]
   }
 ];
