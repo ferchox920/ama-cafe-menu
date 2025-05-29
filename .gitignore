@@ -8,6 +8,16 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+# Build output
+dist
+build
+out
+# Temporary files
+tmp
+temp
+# Dependency directories
+bower_components
+jspm_packages
 
 
 # Editor directories and files
