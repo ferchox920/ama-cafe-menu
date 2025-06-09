@@ -1,10 +1,12 @@
 // src/components/CategorySection/CategorySection.jsx
 import React from 'react';
+import { useTranslation } from 'react-i18next'; // Importar useTranslation
 import MenuItemCard from '../MenuItemCard/MenuItemCard';
 import styles from './CategorySection.module.css';
 
-// Recibe isotipoSrc y onProductClick como props
-function CategorySection({ categoryName, items, isotipoSrc, onProductClick }) { // <- Recibir onProductClick
+function CategorySection({ categoryName, items, isotipoSrc, onProductClick }) {
+  const { t } = useTranslation(); // Obtener la función de traducción
+
   return (
     <section className={styles.categorySection} aria-labelledby={`category-title-${categoryName.replace(/\s+/g, '-')}`}>
       <div className={styles.categoryHeader}>
@@ -16,16 +18,17 @@ function CategorySection({ categoryName, items, isotipoSrc, onProductClick }) { 
             loading="eager"
           />
         )}
+        {/* categoryName ya viene traducido desde App.jsx, pero lo envolvemos por consistencia */}
         <h2 className={styles.categoryTitle} id={`category-title-${categoryName.replace(/\s+/g, '-')}`}>{categoryName}</h2>
       </div>
 
       <ul className={styles.itemsGrid} role="list">
         {items.map(item => (
-          // Pasar la función onProductClick a MenuItemCard
           <MenuItemCard
             key={item.id}
             item={item}
-            onProductClick={onProductClick} // <- Pasar onProductClick
+            onProductClick={onProductClick}
+            t={t} // Pasar la función de traducción al MenuItemCard
           />
         ))}
       </ul>

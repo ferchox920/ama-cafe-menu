@@ -17,6 +17,7 @@ import tequenosImg from '../assets/images/products/Tequenos.png';
 import cachitoImg from '../assets/images/products/Cachito.png';
 import sconQuesoImg from '../assets/images/products/SconQueso.png';
 import tostadoImg from '../assets/images/products/Tostado.png';
+import panChocolateImg from '../assets/images/products/Chocolate.png'; // Asumo que "Chocolate.png" puede servir para Pan de chocolate
 
 // Importaciones de imágenes de BEBIDAS CALIENTES (todas específicas que tienes)
 import teVerdeImg from '../assets/images/products/TeVerde.png';
@@ -50,116 +51,243 @@ import milkshakesImg from '../assets/images/products/Milkshakes.png';
 import isotipoCrema from '../assets/images/isotipo_crema.svg'; // o .png si es el caso
 
 const menuData = [
+  
   {
-    id: "cat-1",
-    category: "Cafés Terapéuticos",
+    id: "cafesTerapeuticos", // ID de la categoría para traducción
+    category: "CAFES TERAPEUTICOS",
     isotipo: isotipoCrema,
     items: [
       {
         id: "prod-1",
         name: "Espresso Motivador",
         description: "Café intenso y concentrado servido en una taza pequeña. La base perfecta para muchas bebidas, con sabor fuerte y aromático.",
-        price: "$15.000",
-        image: espressoImg
+        price: "$3.200",
+        image: espressoImg,
+        translationKeyName: "menu.products.Espresso Motivador",
+        translationKeyDescription: "menu.descriptions.Espresso Motivador"
+      },
+      {
+        id: "prod-extra-1",
+        name: "Espresso doble motivador",
+        description: "Doble shot de espresso para una dosis extra de energía.",
+        price: "$3.400",
+        image: espressoImg,
+        translationKeyName: "menu.products.Espresso doble motivador",
+        translationKeyDescription: "menu.descriptions.Espresso doble motivador"
       },
       {
         id: "prod-2",
         name: "Capuccino con Amor Propio",
         description: "Un balance perfecto entre espresso, leche vaporizada y espuma. Cremoso, espumoso y con un sabor clásico.",
-        price: "$20.000",
-        image: cappuccinoImg
+        price: "$4.200",
+        image: cappuccinoImg,
+        translationKeyName: "menu.products.Capuccino con Amor Propio",
+        translationKeyDescription: "menu.descriptions.Capuccino con Amor Propio"
       },
       {
         id: "prod-3",
         name: "Americano con Estabilidad",
         description: "Espresso rebajado con agua caliente. Sabor más suave, ideal si prefieres un café ligero pero con carácter.",
-        price: "$23.000",
-        image: americanoImg
+        price: "$4.100",
+        image: americanoImg,
+        translationKeyName: "menu.products.Americano con Estabilidad",
+        translationKeyDescription: "menu.descriptions.Americano con Estabilidad"
       },
       {
         id: "prod-4",
-        name: "Macchiato con Ideas",
+        name: "Macchiato o cortado chico con Ideas",
         description: "Espresso “manchado” con un toque de leche espumada. Pequeño, fuerte y con un toque cremoso.",
-        price: "$10.000",
-        image: macchiatoImg
+        price: "$3.500",
+        image: macchiatoImg,
+        translationKeyName: "menu.products.Macchiato o cortado chico con Ideas",
+        translationKeyDescription: "menu.descriptions.Macchiato o cortado chico con Ideas"
       },
       {
         id: "prod-5",
         name: "Flat White con Inteligencia",
         description: "Similar al latte, pero con más café y menos espuma. Textura aterciopelada y sabor intenso.",
-        price: "$8.000",
-        image: flatWhiteImg
+        price: "$4.700",
+        image: flatWhiteImg,
+        translationKeyName: "menu.products.Flat White con Inteligencia",
+        translationKeyDescription: "menu.descriptions.Flat White con Inteligencia"
       },
       {
         id: "prod-6",
-        name: "Latte con Límites",
+        name: "Latte con limites",
         description: "Espresso con mucha leche vaporizada y un poco de espuma. Suave, cremoso y perfecto para quienes prefieren un café más ligero.",
-        price: "$5.000",
-        image: latteImg
+        price: "$4.500",
+        image: latteImg,
+        translationKeyName: "menu.products.Latte con limites",
+        translationKeyDescription: "menu.descriptions.Latte con limites"
       },
       {
         id: "prod-7",
         name: "Mocaccino Dopaminérgico",
         description: "Espresso con leche vaporizada y chocolate. Dulce, cremoso y con ese toque de cacao que lo hace irresistible.",
-        price: "$10.000",
-        image: mocaccinoImg
+        price: "$4.500",
+        image: mocaccinoImg,
+        translationKeyName: "menu.products.Mocaccino Dopaminérgico",
+        translationKeyDescription: "menu.descriptions.Mocaccino Dopaminérgico"
+      },
+      {
+        id: "prod-extra-2",
+        name: "Shot extra",
+        description: "Agrega un shot adicional de espresso a tu bebida favorita.",
+        price: "$1.000",
+        image: espressoImg, // Asignar una imagen si tienes una para "shot extra"
+        translationKeyName: "menu.products.Shot extra",
+        translationKeyDescription: "menu.descriptions.Shot extra"
+      },
+      {
+        id: "prod-extra-3",
+        name: "Leche vegetal",
+        description: "Opción de leche vegetal para personalizar tu café.",
+        price: "$900",
+        image: latteImg, // Asignar una imagen si tienes una para "leche vegetal"
+        translationKeyName: "menu.products.Leche vegetal",
+        translationKeyDescription: "menu.descriptions.Leche vegetal"
       }
     ],
   },
   {
-    id: "cat-2",
-    category: "Apoyos emocionales salados",
+    id: "apoyosDulces", // ID de la categoría para traducción
+    category: "APOYOS EMOCIONALES DULCES",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-8", name: "Medialunas de manteca con Pasión", description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.", price: "$10.000", image: medialunasMantecaImg },
-      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$10.000", image: medialunaJQImg },
-      { id: "prod-10", name: "Medialunas de grasa con Cariño", description: "Salada, hojaldrada y dorada. Con ese sabor clásico que nunca falla.", price: "$10.000", image: medialunasGImg },
-      { id: "prod-11", name: "Tequeños con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$15.000", image: tequenosImg },
-      { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$10.000", image: cachitoImg },
-      { id: "prod-13", name: "Scon de queso con Experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$8.000", image: sconQuesoImg },
-      { id: "prod-14", name: "Tostado con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$9.000", image: tostadoImg }
+      {
+        id: "prod-nuevo-1",
+        name: "Chocotorta con placer",
+        description: "Clásica torta argentina de galletas de chocolate, dulce de leche y queso crema.",
+        price: "$7.200",
+        image: panChocolateImg, // Asigna una imagen si tienes una específica para Chocotorta
+        translationKeyName: "menu.products.Chocotorta con placer",
+        translationKeyDescription: "menu.descriptions.Chocotorta con placer"
+      },
+      {
+        id: "prod-22",
+        name: "Budín de zanahoria con salud mental",
+        description: "Bizcocho suave con zanahoria rallada, nueces y un toque de canela. Dulce, húmedo y lleno de sabor.",
+        price: "$4.600",
+        image: budinZImg,
+        translationKeyName: "menu.products.Budín de zanahoria con salud mental",
+        translationKeyDescription: "menu.descriptions.Budín de zanahoria con salud mental"
+      },
+      {
+        id: "prod-23",
+        name: "Brownie con Autocuidado",
+        description: "Cuadrado de chocolate intenso, con textura densa y corazón suave. Ideal para los amantes del chocolate.",
+        price: "$3.700",
+        image: browieImg,
+        translationKeyName: "menu.products.Brownie con Autocuidado",
+        translationKeyDescription: "menu.descriptions.Brownie con Autocuidado"
+      },
+      {
+        id: "prod-24",
+        name: "Pie de limón con Validación",
+        description: "Base crocante, relleno cremoso de limón y merengue por encima. Equilibrio perfecto entre dulce y ácido.",
+        price: "$7.800",
+        image: pieLImg,
+        translationKeyName: "menu.products.Pie de limón con Validación",
+        translationKeyDescription: "menu.descriptions.Pie de limón con Validación"
+      },
+      {
+        id: "prod-25",
+        name: "Alfajor con Apego seguro",
+        description: "Dos tapas suaves rellenas con dulce de leche cubiertas de azúcar impalpable.",
+        price: "$3.200",
+        image: alfajorImg,
+        translationKeyName: "menu.products.Alfajor con Apego seguro",
+        translationKeyDescription: "menu.descriptions.Alfajor con Apego seguro"
+      },
+      {
+        id: "prod-26",
+        name: "Cheesecake de frutilla con creatividad",
+        description: "Tarta cremosa con base de galleta y cobertura de frutillas. Fresca y suave.",
+        price: "$8.900",
+        image: cheesecakeFRImg,
+        translationKeyName: "menu.products.Cheesecake de frutilla con creatividad",
+        translationKeyDescription: "menu.descriptions.Cheesecake de frutilla con creatividad"
+      },
+      {
+        id: "prod-27",
+        name: "Rol de canela con Autoestima",
+        description: "Masa tierna con relleno de canela y azúcar, coronado con glaseado. Dulce, aromático y muy tentador.",
+        price: "$3.000",
+        image: rolCImg,
+        translationKeyName: "menu.products.Rol de canela con Autoestima",
+        translationKeyDescription: "menu.descriptions.Rol de canela con Autoestima"
+      },
+      {
+        id: "prod-28",
+        name: "Galletas con chispas de chocolate Analíticas",
+        description: "Clásicas, crocantes por fuera y suaves por dentro. Llenas de chispas de chocolate.",
+        price: "$3.100",
+        image: galletitasCCImg,
+        translationKeyName: "menu.products.Galletas con chispas de chocolate Analíticas",
+        translationKeyDescription: "menu.descriptions.Galletas con chispas de chocolate Analíticas"
+      }
     ]
   },
   {
-    id: "cat-3",
-    category: "Bebidas calientes",
+    id: "apoyosSalados", // ID de la categoría para traducción
+    category: "APOYOS EMOCIONALES SALADOS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-15", name: "Té verde con Bienestar", description: "Infusión suave y natural. Liviano y con un toque herbal.", price: "$10.000", image: teVerdeImg },
-      { id: "prod-16", name: "Té negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$10.000", image: teNegroImg },
-      { id: "prod-17", name: "Té de menta con Alegría", description: "Refrescante y aromático. Perfecto para después de comer o para relajar.", price: "$10.000", image: teMentaImg },
-      { id: "prod-18", name: "Té de Chai con Paz", description: "Infusión especiada con notas de canela, clavo y jengibre. Aromático y cálido.", price: "$10.000", image: teChaiImg },
-      { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$10.000", image: matchaImg }, // ¡Ahora con imagen de Matcha!
-      { id: "prod-20", name: "Hierba para mate con Vínculos", description: "Para compartir y fortalecer lazos.", price: "$10.000", image: mateCImg },
-      { id: "prod-21", name: "Chocolate caliente con Claridad", description: "Dulzura que ilumina tus ideas.", price: "$3.000", image: chocolateCalienteImg }
+      { id: "prod-8", name: "2 Medialunas de manteca con Pasión", description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.", price: "$2.400", image: medialunasMantecaImg, translationKeyName: "menu.products.2 Medialunas de manteca con Pasión", translationKeyDescription: "menu.descriptions.2 Medialunas de manteca con Pasión" },
+      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$2.000", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
+      { id: "prod-10", name: "2 Medialunas de grasa con Cariño", description: "Salada, hojaldrada y dorada. Con ese sabor clásico que nunca falla.", price: "$2.300", image: medialunasGImg, translationKeyName: "menu.products.2 Medialunas de grasa con Cariño", translationKeyDescription: "menu.descriptions.2 Medialunas de grasa con Cariño" },
+      { id: "prod-11", name: "Tequeños (6)con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$8.500", image: tequenosImg, translationKeyName: "menu.products.Tequeños (6)con Refuerzo Positivo", translationKeyDescription: "menu.descriptions.Tequeños (6)con Refuerzo Positivo" },
+      { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$5.770", image: cachitoImg, translationKeyName: "menu.products.Cachito con Regulación", translationKeyDescription: "menu.descriptions.Cachito con Regulación" },
+      { id: "prod-13", name: "Scon de queso con experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$3.700", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
+      { id: "prod-14", name: "Tostado de jamón y queso con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$7.500", image: tostadoImg, translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación", translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación" },
+      {
+        id: "prod-nuevo-2",
+        name: "Pan de chocolate con Impulso",
+        description: "Delicioso pan dulce con trozos de chocolate.",
+        price: "$4.600",
+        image: panChocolateImg, // Asigna una imagen si tienes una específica para Pan de chocolate
+        translationKeyName: "menu.products.Pan de chocolate con Impulso",
+        translationKeyDescription: "menu.descriptions.Pan de chocolate con Impulso"
+      }
     ]
   },
   {
-    id: "cat-4",
-    category: "Apoyos emocionales dulces",
+    id: "noCafe", // ID de la categoría para traducción
+    category: "PARA LOS “NO TOMO CAFÉ”",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-22", name: "Budín de zanahoria con Expresión", description: "Bizcocho suave con zanahoria rallada, nueces y un toque de canela. Dulce, húmedo y lleno de sabor.", price: "$10.000", image: budinZImg },
-      { id: "prod-23", name: "Brownie con Autocuidado", description: "Cuadrado de chocolate intenso, con textura densa y corazón suave. Ideal para los amantes del chocolate.", price: "$10.000", image: browieImg },
-      { id: "prod-24", name: "Pie de limón con Validación", description: "Base crocante, relleno cremoso de limón y merengue por encima. Equilibrio perfecto entre dulce y ácido.", price: "$10.000", image: pieLImg },
-      { id: "prod-25", name: "Alfajor con Apego Seguro", description: "Dos tapas suaves rellenas con dulce de leche cubiertas de azúcar impalpable.", price: "$10.000", image: alfajorImg },
-      { id: "prod-26", name: "Cheesecake de frutos rojos con Mimo", description: "Tarta cremosa con base de galleta y cobertura de frutillas. Fresca y suave.", price: "$10.000", image: cheesecakeFRImg },
-      { id: "prod-27", name: "Rol de canela con Autoestima", description: "Masa tierna con relleno de canela y azúcar, coronado con glaseado. Dulce, aromático y muy tentador.", price: "$10.000", image: rolCImg },
-      { id: "prod-28", name: "Galletitas con chispas de chocolate con Análisis", description: "Clásicas, crocantes por fuera y suaves por dentro. Llenas de chispas de chocolate.", price: "$10.000", image: galletitasCCImg }
+      // Este es un marcador de posición. Los productos reales de "PARA LOS NO TOMO CAFÉ" se moverán aquí.
+      // Si esta categoría es solo un título para agrupar las bebidas, puedes dejarla vacía
+      // o mover las bebidas frías y calientes aquí, reorganizando las categorías.
+      // Según el diseño original, esta es una especie de "sección" sin ítems directos.
     ]
   },
   {
-    id: "cat-5",
-    category: "Bebidas frías",
+    id: "bebidasFrias", // ID de la categoría para traducción
+    category: "BEBIDAS FRÍAS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$10.000", image: frappuccinoImg },
-      { id: "prod-30", name: "Frappé de Ananá con Dopamina", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$3.000", image: frapeAnanaImg },
-      { id: "prod-31", name: "Frappé de Frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$10.000", image: frappeFrutillaImg },
-      { id: "prod-32", name: "Frappé de Limón Anti Estrés", description: "Bebida helada, cítrica y refrescante.", price: "$8.900", image: frappeLImg },
-      { id: "prod-33", name: "Agua sin gas con Regulación", description: "Hidratación simple para encontrar tu equilibrio.", price: "$3.000", image: aguaImg },
-      { id: "prod-34", name: "Agua con gas sin Represión", description: "Burbujas de liberación y frescura.", price: "$4.500", image: aguaGImg },
-      { id: "prod-35", name: "Milkshakes con Serotonina", description: "Batido frío con leche y mucho chocolate. Cremoso y dulce.", price: "$3.900", image: milkshakesImg }
+      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$4.500", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
+      { id: "prod-30", name: "Frappé de Ananá con Desahogo", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$6.300", image: frapeAnanaImg, translationKeyName: "menu.products.Frappé de Ananá con Desahogo", translationKeyDescription: "menu.descriptions.Frappé de Ananá con Desahogo" },
+      { id: "prod-32", name: "Frappé de limón Anti estrés", description: "Bebida helada, cítrica y refrescante.", price: "$5.500", image: frappeLImg, translationKeyName: "menu.products.Frappé de limón Anti estrés", translationKeyDescription: "menu.descriptions.Frappé de limón Anti estrés" },
+      { id: "prod-31", name: "Frappé de frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$6.000", image: frappeFrutillaImg, translationKeyName: "menu.products.Frappé de frutilla Sensorial", translationKeyDescription: "menu.descriptions.Frappé de frutilla Sensorial" },
+      { id: "prod-35", name: "Milkshake de chocolate con Serotonina", description: "Batido frío con leche y mucho chocolate. Cremoso y dulce.", price: "$3.100", image: milkshakesImg, translationKeyName: "menu.products.Milkshake de chocolate con Serotonina", translationKeyDescription: "menu.descriptions.Milkshake de chocolate con Serotonina" },
+      { id: "prod-34", name: "Agua con gas sin Represión", description: "Burbujas de liberación y frescura.", price: "$2.300", image: aguaGImg, translationKeyName: "menu.products.Agua con gas sin Represión", translationKeyDescription: "menu.descriptions.Agua con gas sin Represión" },
+      { id: "prod-33", name: "Agua sin gas con Regulación", description: "Hidratación simple para encontrar tu equilibrio.", price: "$2.000", image: aguaImg, translationKeyName: "menu.products.Agua sin gas con Regulación", translationKeyDescription: "menu.descriptions.Agua sin gas con Regulación" }
+    ]
+  },
+  {
+    id: "bebidasCalientes", // ID de la categoría para traducción
+    category: "BEBIDAS CALIENTES",
+    isotipo: isotipoCrema,
+    items: [
+      { id: "prod-21", name: "Chocolate caliente con Claridad", description: "Dulzura que ilumina tus ideas.", price: "$4.000", image: chocolateCalienteImg, translationKeyName: "menu.products.Chocolate caliente con Claridad", translationKeyDescription: "menu.descriptions.Chocolate caliente con Claridad" },
+      { id: "prod-15", name: "Té verde con Bienestar", description: "Infusión suave y natural. Liviano y con un toque herbal.", price: "$3.500", image: teVerdeImg, translationKeyName: "menu.products.Té verde con Bienestar", translationKeyDescription: "menu.descriptions.Té verde con Bienestar" },
+      { id: "prod-16", name: "Te negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$3.500", image: teNegroImg, translationKeyName: "menu.products.Te negro con Alma", translationKeyDescription: "menu.descriptions.Te negro con Alma" },
+      { id: "prod-17", name: "Té de menta con Alegría", description: "Refrescante y aromático. Perfecto para después de comer o para relajar.", price: "$3.500", image: teMentaImg, translationKeyName: "menu.products.Té de menta con Alegría", translationKeyDescription: "menu.descriptions.Té de menta con Alegría" },
+      { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$3.650", image: matchaImg, translationKeyName: "menu.products.Matcha con Concentración", translationKeyDescription: "menu.descriptions.Matcha con Concentración" },
+      { id: "prod-18", name: "Té Chai con Paz", description: "Infusión especiada con notas de canela, clavo y jengibre. Aromático y cálido.", price: "$3.500", image: teChaiImg, translationKeyName: "menu.products.Té Chai con Paz", translationKeyDescription: "menu.descriptions.Té Chai con Paz" },
+      { id: "prod-20", name: "Mate cocido con abrazos", description: "Infusión tradicional, suave y reconfortante. Sabor a casa.", price: "$3.500", image: mateCImg, translationKeyName: "menu.products.Mate cocido con abrazos", translationKeyDescription: "menu.descriptions.Mate cocido con abrazos" }
     ]
   }
 ];

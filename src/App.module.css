@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   /* Añadir un sutil borde redondeado inferior, como el menú original tiene una "onda" */
-  border-bottom-left-radius: 15px; 
+  border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
@@ -75,6 +75,68 @@
     color: var(--color-azul-claro-iconos);
 }
 
+/* ========================================= */
+/* Estilos para el Selector de Idioma        */
+/* ========================================= */
+.languageSelector {
+  text-align: center;
+  margin-top: -20px; /* Ajusta este margen si el selector queda muy pegado al header */
+  margin-bottom: 30px; /* Más espacio debajo del selector y antes del menú */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacio entre botones de bandera */
+  padding: 0 20px; /* Alinea con el padding de .menuMain */
+}
+
+.flagButton {
+  background: none;
+  border: 2px solid var(--color-azul-oscuro); /* Borde con el color azul oscuro */
+  padding: 8px 12px; /* Padding ajustado para dar más "aire" al icono */
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  border-radius: 8px; /* Bordes ligeramente redondeados */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px; /* Asegura un tamaño mínimo para el botón */
+  min-height: 44px; /* Tamaño mínimo para touch targets (recomendado) */
+}
+
+.flagButton:hover {
+  border-color: var(--color-azul-claro-iconos); /* Resalta con el azul claro al pasar el mouse */
+  background-color: rgba(52, 78, 156, 0.05); /* Fondo muy sutil al pasar el mouse */
+  transform: scale(1.02); /* Efecto de "crecimiento" sutil */
+}
+
+.flagButton.activeFlag {
+  border-color: var(--color-azul-claro-iconos); /* Borde para el idioma activo */
+  background-color: rgba(52, 78, 156, 0.15); /* Fondo más visible para el idioma activo */
+  color: var(--color-azul-oscuro); /* Si el texto del idioma está dentro del botón */
+}
+
+.flagIcon { /* Estilo para la imagen de la bandera dentro del botón */
+  width: 30px; /* Tamaño de la bandera (ajusta según la resolución de tus imágenes) */
+  height: auto;
+  display: block;
+  /* Eliminar cualquier margen extra que pueda traer la imagen */
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================= */
+/* Estilos para el Subtítulo de Sección      */
+/* ========================================= */
+.menuSubtitle {
+  text-align: center;
+  font-size: 1.1em; /* Un poco más pequeño que un h2 de categoría, pero notable */
+  font-weight: 600; /* Un poco más de bold */
+  color: var(--color-texto-principal); /* Color de texto principal */
+  margin: 40px 0; /* Más espacio antes y después del subtítulo */
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0.03); /* Fondo muy sutil para destacar */
+  border-radius: 5px;
+}
+
 
 /* --- Media Queries --- */
 @media (min-width: 768px) {
@@ -91,11 +153,26 @@
   .appSlogan {
     font-size: 1.2em;
   }
+  .languageSelector {
+    margin-top: -30px; /* Más elevado en desktop */
+    margin-bottom: 50px; /* Más espacio */
+    gap: 20px;
+  }
+  .flagButton {
+    padding: 10px 15px;
+  }
+  .flagIcon {
+    width: 35px; /* Banderas un poco más grandes en desktop */
+  }
   .menuMain {
     padding: 0 30px; /* Mayor padding horizontal en desktop */
   }
   .appFooter {
     margin-top: 80px;
     padding: 40px 30px;
+  }
+  .menuSubtitle {
+    font-size: 1.3em; /* Subtítulo más grande en desktop */
+    margin: 50px 0;
   }
 }
