@@ -1,5 +1,3 @@
-
-
 ````markdown
 # ☕ Ama Café – Menú Digital  
 > Tu carta interactiva, siempre al punto.
@@ -13,14 +11,14 @@ Una app **React + Vite** que lleva la experiencia de pedir un latte o un alfajor
 ---
 
 ## 📑 Tabla de Contenidos
-1. [Características](#-características)
-2. [Tecnologías](#-tecnologías)
-3. [Estructura del Proyecto](#-estructura-del-proyecto)
-4. [Instalación](#-instalación)
-5. [Despliegue](#-despliegue)
-6. [Personalización](#-personalización)
-7. [Contribuir](#-contribuir)
-8. [Autor](#-autor)
+1. [Características](#-características)  
+2. [Tecnologías](#-tecnologías)  
+3. [Estructura del Proyecto](#-estructura-del-proyecto)  
+4. [Instalación](#-instalación)  
+5. [Despliegue](#-despliegue)  
+6. [Personalización](#-personalización)  
+7. [Contribuir](#-contribuir)  
+8. [Autor](#-autor)  
 
 ---
 
@@ -45,20 +43,20 @@ Una app **React + Vite** que lleva la experiencia de pedir un latte o un alfajor
 ---
 
 ## 🛠 Tecnologías
-| Herramienta | Uso |
-|-------------|-----|
-| **React** | UI declarativa |
-| **Vite** | Bundling ultrarrápido |
+| Herramienta           | Uso                         |
+|-----------------------|-----------------------------|
+| **React**             | UI declarativa             |
+| **Vite**              | Bundling ultrarrápido       |
 | **i18next / react-i18next** | Internacionalización |
-| **CSS Modules** | Encapsulado de estilos |
-| **Git + GitHub Pages** | Control de versiones & hosting |
+| **CSS Modules**       | Encapsulado de estilos      |
+| **Git + GitHub Pages**| Control de versiones & hosting |
 
 ---
 
 ## 📂 Estructura del Proyecto
 ```text
 cafe-menu/
-├── public/                # Estáticos
+├── public/                # Archivos estáticos (favicon, etc.)
 ├── src/
 │   ├── assets/            # Logos, íconos, fotos
 │   ├── components/        # React components
@@ -127,7 +125,6 @@ https://<usuario>.github.io/<repo>/
 2. *Commitea* con estilo:
    `git commit -m "feat: Añade espresso descafeinado"`
 3. *Push* y abre un **Pull Request**.
-   El espresso es fuerte, las PR también: describe bien qué cambias.
 
 ---
 
@@ -141,4 +138,4 @@ Hecho con ❤️ y mucho café desde CABA, Argentina.
 Licencia MIT.
 
 ```
-
+```
