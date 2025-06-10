@@ -7,7 +7,6 @@ import ProductModal from './components/ProductModal/ProductModal';
 import styles from './App.module.css';
 import logoAmaCafe from './assets/logo/logo.svg';
 
-// --- Importar las imágenes de las banderas ---
 import flagAR from './assets/icons/flag_ar.svg';
 import flagUS from './assets/icons/flag_us.svg';
 
@@ -16,13 +15,16 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const openProductModal = (product) => {
+
     setSelectedProduct(product);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'; 
+    document.body.classList.add(styles.bodyModalOpen);
   };
 
   const closeProductModal = () => {
     setSelectedProduct(null);
     document.body.style.overflow = 'unset';
+    document.body.classList.remove(styles.bodyModalOpen);
   };
 
   const changeLanguage = (lng) => {
@@ -48,7 +50,6 @@ function App() {
         <p className={styles.appSlogan}>{t('header.slogan')}</p>
       </header>
 
-      {/* Selector de Idioma con Banderas */}
       <div className={styles.languageSelector}>
         <button onClick={() => changeLanguage('es')} className={`${styles.flagButton} ${i18n.language === 'es' ? styles.activeFlag : ''}`}>
           <img src={flagAR} alt={t('language.es_alt')} className={styles.flagIcon} />
@@ -60,11 +61,10 @@ function App() {
 
       <main className={styles.menuMain} id="menu-principal">
         {menuData.map((categoryData) => {
-          // Lógica para renderizar el título de sección diferente
           if (categoryData.isSectionTitle) {
             return (
-              <h2 key={categoryData.id} className={styles.sectionTitle}> {/* Nueva clase CSS */}
-                {t(categoryData.translationKey)} {/* Usamos la clave de traducción */}
+              <h2 key={categoryData.id} className={styles.sectionTitle}>
+                {t(categoryData.translationKey)}
               </h2>
             );
           }
@@ -74,7 +74,7 @@ function App() {
               categoryName={t(`menu.categories.${categoryData.id}`)}
               isotipoSrc={categoryData.isotipo}
               items={categoryData.items}
-              onProductClick={openProductModal}
+              onProductClick={openProductModal} 
             />
           );
         })}

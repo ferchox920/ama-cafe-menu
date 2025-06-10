@@ -1,46 +1,42 @@
-/* src/App.module.css */
-
 .appContainer {
-  max-width: 900px; /* Ancho máximo para el contenido */
+  max-width: 1080px; 
   margin: 0 auto;
   padding: 0;
-  overflow-x: hidden; /* Previene scroll horizontal */
-  background-color: var(--color-background-crema); /* Fondo principal */
+  overflow-x: hidden;
+  background-color: var(--color-background-crema);
+}
+
+.bodyModalOpen main,
+.bodyModalOpen header,
+.bodyModalOpen .languageSelector,
+.bodyModalOpen footer {
+  filter: blur(5px);
+  transition: filter 0.3s ease-out;
+  pointer-events: none;
+  user-select: none;
 }
 
 .appHeader {
   text-align: center;
-  padding: 30px 20px 20px; /* Ajuste de padding: top, right/left, bottom */
+  padding: 30px 20px 20px;
   background-color: var(--color-azul-oscuro);
   color: var(--color-blanco);
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Añadir un sutil borde redondeado inferior, como el menú original tiene una "onda" */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
 .appLogo {
-  width: 180px; /* Logo más grande para mobile */
+  width: 200px;   /* antes: 180px */
   height: auto;
-  margin-bottom: 12px; /* Espacio entre logo y título */
-}
-
-.sectionTitle {
-  text-align: center; /* Centrar el texto */
-  font-size: 1.8em; /* Tamaño de fuente para que sea un título prominente */
-  font-weight: 700; /* Negrita para destacarlo */
-  color: var(--color-azul-oscuro); /* Usar el color azul principal */
-  margin: 50px 0 30px; /* Margen superior e inferior para separarlo bien */
-  padding: 0 10px; /* Pequeño padding horizontal si el texto es muy ancho */
-  font-family: 'Playfair Display', serif; /* Usar la fuente de los títulos */
-  text-transform: uppercase; /* Opcional: poner en mayúsculas como en el menú original */
+  margin-bottom: 12px;
 }
 
 .appTitle {
-  font-size: 2.5em; /* Tamaño del título ajustado */
+  font-size: 2.5em;
   margin-bottom: 5px;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -48,146 +44,137 @@
 }
 
 .appSlogan {
-  font-size: 1.05em; /* Ligero aumento para el eslogan */
+  font-size: 1.05em;
   opacity: 0.95;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   margin-top: 0;
-  line-height: 1.4; /* Mejorar legibilidad */
+  line-height: 1.4;
 }
 
 .menuMain {
-  padding: 0 20px; /* Más padding horizontal para el contenido principal en mobile */
+  padding: 0 20px;
   background-color: var(--color-background-crema);
 }
 
 .appFooter {
   text-align: center;
-  margin-top: 60px; /* Más espacio antes del footer */
+  margin-top: 60px;
   padding: 30px 20px;
   font-size: 0.85em;
   color: var(--color-texto-secundario);
   background-color: var(--color-background-crema);
   border-top: 1px solid #EAEAEA;
-  border-top-left-radius: 15px; /* Bordes redondeados superiores para el footer */
+  border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 .appFooter p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .appFooter a {
-    color: var(--color-azul-oscuro);
-    font-weight: 500;
+  color: var(--color-azul-oscuro);
+  font-weight: 500;
 }
 
 .appFooter a:hover {
-    color: var(--color-azul-claro-iconos);
+  color: var(--color-azul-claro-iconos);
 }
 
-/* ========================================= */
-/* Estilos para el Selector de Idioma        */
-/* ========================================= */
 .languageSelector {
   text-align: center;
-  margin-top: -20px; /* Ajusta este margen si el selector queda muy pegado al header */
-  margin-bottom: 30px; /* Más espacio debajo del selector y antes del menú */
+  margin-top: -20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  gap: 15px; /* Espacio entre botones de bandera */
-  padding: 0 20px; /* Alinea con el padding de .menuMain */
+  gap: 15px;
+  padding: 0 20px;
 }
 
 .flagButton {
   background: none;
-  border: 2px solid var(--color-azul-oscuro); /* Borde con el color azul oscuro */
-  padding: 8px 12px; /* Padding ajustado para dar más "aire" al icono */
+  border: 2px solid var(--color-azul-oscuro);
+  padding: 8px 12px;
   cursor: pointer;
   transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
-  border-radius: 8px; /* Bordes ligeramente redondeados */
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 60px; /* Asegura un tamaño mínimo para el botón */
-  min-height: 44px; /* Tamaño mínimo para touch targets (recomendado) */
+  min-width: 60px;
+  min-height: 44px;
 }
 
 .flagButton:hover {
-  border-color: var(--color-azul-claro-iconos); /* Resalta con el azul claro al pasar el mouse */
-  background-color: rgba(52, 78, 156, 0.05); /* Fondo muy sutil al pasar el mouse */
-  transform: scale(1.02); /* Efecto de "crecimiento" sutil */
+  border-color: var(--color-azul-oscuro);
+  background-color: rgba(52, 78, 156, 0.05);
+  transform: scale(1.05);
 }
 
 .flagButton.activeFlag {
-  border-color: var(--color-azul-claro-iconos); /* Borde para el idioma activo */
-  background-color: rgba(52, 78, 156, 0.15); /* Fondo más visible para el idioma activo */
-  color: var(--color-azul-oscuro); /* Si el texto del idioma está dentro del botón */
+  border-color: var(--color-azul-claro-iconos);
+  background-color: rgba(52, 78, 156, 0.15);
+  color: var(--color-azul-oscuro);
 }
 
-.flagIcon { /* Estilo para la imagen de la bandera dentro del botón */
-  width: 30px; /* Tamaño de la bandera (ajusta según la resolución de tus imágenes) */
+.flagIcon {
+  width: 32px;
   height: auto;
   display: block;
-  /* Eliminar cualquier margen extra que pueda traer la imagen */
   margin: 0;
   padding: 0;
 }
 
-/* ========================================= */
-/* Estilos para el Subtítulo de Sección      */
-/* ========================================= */
-.menuSubtitle {
+.sectionTitle {
   text-align: center;
-  font-size: 1.1em; /* Un poco más pequeño que un h2 de categoría, pero notable */
-  font-weight: 600; /* Un poco más de bold */
-  color: var(--color-texto-principal); /* Color de texto principal */
-  margin: 40px 0; /* Más espacio antes y después del subtítulo */
-  padding: 8px 15px;
-  background-color: rgba(0, 0, 0, 0.03); /* Fondo muy sutil para destacar */
-  border-radius: 5px;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--color-azul-oscuro);
+  margin: 50px 0 30px;
+  padding: 0 10px;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
 }
-
 
 /* --- Media Queries --- */
 @media (min-width: 768px) {
+  .appContainer {
+    padding: 0 30px;
+  }
   .appHeader {
-    padding: 40px 30px 25px; /* Más padding para desktop */
+    padding: 40px 30px 25px;
   }
   .appLogo {
-    width: 220px; /* Logo aún más grande en desktop */
+    width: 280px; /* antes: 220px */
     margin-bottom: 18px;
   }
-  .sectionTitle {
-    font-size: 2.2em; /* Más grande en desktop */
-    margin: 60px 0 40px; /* Margen ajustado */
-  }
   .appTitle {
-    font-size: 3em; /* Título más grande */
+    font-size: 3em;
   }
   .appSlogan {
     font-size: 1.2em;
   }
   .languageSelector {
-    margin-top: -30px; /* Más elevado en desktop */
-    margin-bottom: 50px; /* Más espacio */
+    margin-top: -30px;
+    margin-bottom: 50px;
     gap: 20px;
   }
   .flagButton {
     padding: 10px 15px;
   }
   .flagIcon {
-    width: 35px; /* Banderas un poco más grandes en desktop */
+    width: 35px;
   }
   .menuMain {
-    padding: 0 30px; /* Mayor padding horizontal en desktop */
+    padding: 0;
   }
   .appFooter {
     margin-top: 80px;
     padding: 40px 30px;
   }
-  .menuSubtitle {
-    font-size: 1.3em; /* Subtítulo más grande en desktop */
-    margin: 50px 0;
+  .sectionTitle {
+    font-size: 2.2em;
+    margin: 60px 0 40px;
   }
 }

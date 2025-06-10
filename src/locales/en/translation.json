@@ -8,6 +8,10 @@
     "madeWithLove": "Made with ❤️ by {{developerName}} in {{developerLocation}}.",
     "visitGithub": "Visit my GitHub."
   },
+  "language": {
+    "es_alt": "Argentinian flag",
+    "en_alt": "United States flag"
+  },
   "menu": {
     "title": "COFFEE MENU",
     "subtitleStart": "Orders only at the counter",
