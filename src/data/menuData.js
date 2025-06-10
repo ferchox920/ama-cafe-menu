@@ -263,7 +263,7 @@ const menuData = [
     category: "BEBIDAS FRÍAS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$2.500", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
+      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$4.500", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
       { id: "prod-30", name: "Frappé de Ananá con Desahogo", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$6.300", image: frapeAnanaImg, translationKeyName: "menu.products.Frappé de Ananá con Desahogo", translationKeyDescription: "menu.descriptions.Frappé de Ananá con Desahogo" },
       { id: "prod-32", name: "Frappé de limón Anti estrés", description: "Bebida helada, cítrica y refrescante.", price: "$5.500", image: frappeLImg, translationKeyName: "menu.products.Frappé de limón Anti estrés", translationKeyDescription: "menu.descriptions.Frappé de limón Anti estrés" },
       { id: "prod-31", name: "Frappé de frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$6.000", image: frappeFrutillaImg, translationKeyName: "menu.products.Frappé de frutilla Sensorial", translationKeyDescription: "menu.descriptions.Frappé de frutilla Sensorial" },
