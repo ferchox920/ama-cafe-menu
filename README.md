@@ -1,4 +1,3 @@
-````markdown
 # ☕ Ama Café – Menú Digital  
 > Tu carta interactiva, siempre al punto.
 
@@ -70,9 +69,7 @@ cafe-menu/
 │   └── main.jsx
 ├── vite.config.js
 └── README.md
-````
 
----
 
 ## ⚙️ Instalación
 
@@ -137,5 +134,3 @@ https://<usuario>.github.io/<repo>/
 Hecho con ❤️ y mucho café desde CABA, Argentina.
 Licencia MIT.
 
-```
-```
