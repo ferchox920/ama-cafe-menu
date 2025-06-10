@@ -26,7 +26,7 @@ import teMentaImg from '../assets/images/products/TeMenta.png';
 import teChaiImg from '../assets/images/products/TeC.png'; // 'TeC.png' para Té de Chai
 import mateCImg from '../assets/images/products/MateC.png'; // 'MateC.png' para Hierba para mate con Vínculos
 import chocolateCalienteImg from '../assets/images/products/Chocolate.png';
-import matchaImg from '../assets/images/products/Matcha.png'; // ¡Ahora sí tenemos Matcha!
+import matchaImg from '../assets/images/products/Matcha.png'; // Ahora sí tenemos Matcha!
 
 // Importaciones de imágenes de APOYOS EMOCIONALES DULCES (todas específicas)
 import budinZImg from '../assets/images/products/BudinZ.png'; // Budín de zanahoria
@@ -51,7 +51,6 @@ import milkshakesImg from '../assets/images/products/Milkshakes.png';
 import isotipoCrema from '../assets/images/isotipo_crema.svg'; // o .png si es el caso
 
 const menuData = [
-  
   {
     id: "cafesTerapeuticos", // ID de la categoría para traducción
     category: "CAFES TERAPEUTICOS",
@@ -156,7 +155,7 @@ const menuData = [
     items: [
       {
         id: "prod-nuevo-1",
-        name: "Chocotorta con placer",
+        name: "Chocotorta con placer", // Nombre actualizado
         description: "Clásica torta argentina de galletas de chocolate, dulce de leche y queso crema.",
         price: "$7.200",
         image: panChocolateImg, // Asigna una imagen si tienes una específica para Chocotorta
@@ -254,20 +253,17 @@ const menuData = [
   {
     id: "noCafe", // ID de la categoría para traducción
     category: "PARA LOS “NO TOMO CAFÉ”",
-    isotipo: isotipoCrema,
-    items: [
-      // Este es un marcador de posición. Los productos reales de "PARA LOS NO TOMO CAFÉ" se moverán aquí.
-      // Si esta categoría es solo un título para agrupar las bebidas, puedes dejarla vacía
-      // o mover las bebidas frías y calientes aquí, reorganizando las categorías.
-      // Según el diseño original, esta es una especie de "sección" sin ítems directos.
-    ]
+    isotipo: isotipoCrema, // Mantener isotipo
+    items: [], // Vaciar el array de items, ya que no contendrá productos directamente
+    isSectionTitle: true, // <--- PROPIEDAD CLAVE: Indicar que es un título de sección
+    translationKey: "menu.categories.noCafe" // Clave para la traducción del título de sección
   },
   {
     id: "bebidasFrias", // ID de la categoría para traducción
     category: "BEBIDAS FRÍAS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$4.500", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
+      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Bebida helada, cítrica y refrescante.", price: "$2.500", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
       { id: "prod-30", name: "Frappé de Ananá con Desahogo", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$6.300", image: frapeAnanaImg, translationKeyName: "menu.products.Frappé de Ananá con Desahogo", translationKeyDescription: "menu.descriptions.Frappé de Ananá con Desahogo" },
       { id: "prod-32", name: "Frappé de limón Anti estrés", description: "Bebida helada, cítrica y refrescante.", price: "$5.500", image: frappeLImg, translationKeyName: "menu.products.Frappé de limón Anti estrés", translationKeyDescription: "menu.descriptions.Frappé de limón Anti estrés" },
       { id: "prod-31", name: "Frappé de frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$6.000", image: frappeFrutillaImg, translationKeyName: "menu.products.Frappé de frutilla Sensorial", translationKeyDescription: "menu.descriptions.Frappé de frutilla Sensorial" },

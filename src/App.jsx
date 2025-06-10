@@ -8,9 +8,8 @@ import styles from './App.module.css';
 import logoAmaCafe from './assets/logo/logo.svg';
 
 // --- Importar las imágenes de las banderas ---
-// ASEGÚRATE de que estas rutas sean CORRECTAS y los archivos existan
-import flagAR from './assets/icons/flag_ar.svg'; // O .png si usas PNG
-import flagUS from './assets/icons/flag_us.svg'; // O .png si usas PNG
+import flagAR from './assets/icons/flag_ar.svg';
+import flagUS from './assets/icons/flag_us.svg';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -52,27 +51,26 @@ function App() {
       {/* Selector de Idioma con Banderas */}
       <div className={styles.languageSelector}>
         <button onClick={() => changeLanguage('es')} className={`${styles.flagButton} ${i18n.language === 'es' ? styles.activeFlag : ''}`}>
-          <img src={flagAR} alt={t('language.es_alt')} className={styles.flagIcon} /> {/* Usa la imagen de la bandera */}
+          <img src={flagAR} alt={t('language.es_alt')} className={styles.flagIcon} />
         </button>
         <button onClick={() => changeLanguage('en')} className={`${styles.flagButton} ${i18n.language === 'en' ? styles.activeFlag : ''}`}>
-          <img src={flagUS} alt={t('language.en_alt')} className={styles.flagIcon} /> {/* Usa la imagen de la bandera */}
+          <img src={flagUS} alt={t('language.en_alt')} className={styles.flagIcon} />
         </button>
       </div>
 
       <main className={styles.menuMain} id="menu-principal">
         {menuData.map((categoryData) => {
-          // ELIMINAR ESTA LÓGICA DE CONDICIONAL DE SUBTÍTULO
-          // if (categoryData.isSubtitle) {
-          //   return (
-          //     <h2 key={categoryData.id} className={styles.menuSubtitle}>
-          //       {t(`menu.categories.${categoryData.id}`)}
-          //     </h2>
-          //   );
-          // }
+          // Lógica para renderizar el título de sección diferente
+          if (categoryData.isSectionTitle) {
+            return (
+              <h2 key={categoryData.id} className={styles.sectionTitle}> {/* Nueva clase CSS */}
+                {t(categoryData.translationKey)} {/* Usamos la clave de traducción */}
+              </h2>
+            );
+          }
           return (
             <CategorySection
               key={categoryData.id}
-              // Traducir el nombre de la categoría
               categoryName={t(`menu.categories.${categoryData.id}`)}
               isotipoSrc={categoryData.isotipo}
               items={categoryData.items}

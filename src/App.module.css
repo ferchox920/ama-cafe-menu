@@ -28,6 +28,17 @@
   margin-bottom: 12px; /* Espacio entre logo y título */
 }
 
+.sectionTitle {
+  text-align: center; /* Centrar el texto */
+  font-size: 1.8em; /* Tamaño de fuente para que sea un título prominente */
+  font-weight: 700; /* Negrita para destacarlo */
+  color: var(--color-azul-oscuro); /* Usar el color azul principal */
+  margin: 50px 0 30px; /* Margen superior e inferior para separarlo bien */
+  padding: 0 10px; /* Pequeño padding horizontal si el texto es muy ancho */
+  font-family: 'Playfair Display', serif; /* Usar la fuente de los títulos */
+  text-transform: uppercase; /* Opcional: poner en mayúsculas como en el menú original */
+}
+
 .appTitle {
   font-size: 2.5em; /* Tamaño del título ajustado */
   margin-bottom: 5px;
@@ -146,6 +157,10 @@
   .appLogo {
     width: 220px; /* Logo aún más grande en desktop */
     margin-bottom: 18px;
+  }
+  .sectionTitle {
+    font-size: 2.2em; /* Más grande en desktop */
+    margin: 60px 0 40px; /* Margen ajustado */
   }
   .appTitle {
     font-size: 3em; /* Título más grande */
