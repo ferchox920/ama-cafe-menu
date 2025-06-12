@@ -15,9 +15,8 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const openProductModal = (product) => {
-
     setSelectedProduct(product);
-    document.body.style.overflow = 'hidden'; 
+    document.body.style.overflow = 'hidden';
     document.body.classList.add(styles.bodyModalOpen);
   };
 
@@ -59,6 +58,10 @@ function App() {
         </button>
       </div>
 
+      <div className={styles.orderNote}>
+        <p>LOS PEDIDOS SOLO EN CAJA</p>
+      </div>
+
       <main className={styles.menuMain} id="menu-principal">
         {menuData.map((categoryData) => {
           if (categoryData.isSectionTitle) {
@@ -74,7 +77,7 @@ function App() {
               categoryName={t(`menu.categories.${categoryData.id}`)}
               isotipoSrc={categoryData.isotipo}
               items={categoryData.items}
-              onProductClick={openProductModal} 
+              onProductClick={openProductModal}
             />
           );
         })}

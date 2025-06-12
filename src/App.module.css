@@ -1,5 +1,6 @@
+/* src/App.module.css */
 .appContainer {
-  max-width: 1080px; 
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0;
   overflow-x: hidden;
@@ -30,7 +31,7 @@
 }
 
 .appLogo {
-  width: 200px;   /* antes: 180px */
+  width: 200px; /* antes: 180px */
   height: auto;
   margin-bottom: 12px;
 }
@@ -137,6 +138,21 @@
   text-transform: uppercase;
 }
 
+.orderNote {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  color: var(--color-azul-oscuro);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+.orderNote p {
+  margin: 0;
+}
+
 /* --- Media Queries --- */
 @media (min-width: 768px) {
   .appContainer {
@@ -176,5 +192,10 @@
   .sectionTitle {
     font-size: 2.2em;
     margin: 60px 0 40px;
+  }
+  .orderNote {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 1.25em;
   }
 }
