@@ -46,6 +46,8 @@ import aguaImg from '../assets/images/products/Agua.png';
 import aguaGImg from '../assets/images/products/AguaG.png'; // Agua con gas
 import milkshakesImg from '../assets/images/products/Milkshakes.png';
 import lecheVImg from '../assets/images/products/LecheV.png';
+import syrupAImg from '../assets/images/products/SyrupA.png';
+import syrupCImg from '../assets/images/products/SyrupC.png';
 
 
 // Importamos el isotipo crema (verificar ruta si no está en 'images/products')
@@ -95,21 +97,21 @@ const menuData = [
       },
       {
         id: "prod-4",
-        name: "Macchiato con Humor", // Updated name
+        name: "Macchiato con Humor",
         description: "Espresso “manchado” con un toque de leche espumada. Una bebida pequeña, fuerte y con un toque cremoso, servido en taza chica.",
         price: "$4.200",
         image: macchiatoImg,
-        translationKeyName: "menu.products.Macchiato con Humor", // Updated translation key name
-        translationKeyDescription: "menu.descriptions.Macchiato con Humor" // Updated translation key description
+        translationKeyName: "menu.products.Macchiato con Humor",
+        translationKeyDescription: "menu.descriptions.Macchiato con Humor"
       },
       {
         id: "prod-cortado",
-        name: "Cortado con Ideas", // Updated name
+        name: "Cortado con Ideas",
         description: "Café espresso con un poco de leche caliente, ideal para quienes buscan una opción más suave pero con la intensidad del espresso, servido en taza chica.",
         price: "$3.900",
         image: macchiatoImg,
-        translationKeyName: "menu.products.Cortado con Ideas", // Updated translation key name
-        translationKeyDescription: "menu.descriptions.Cortado con Ideas" // Updated translation key description
+        translationKeyName: "menu.products.Cortado con Ideas",
+        translationKeyDescription: "menu.descriptions.Cortado con Ideas"
       },
       {
         id: "prod-5",
@@ -143,7 +145,7 @@ const menuData = [
         name: "Shot extra",
         description: "Agrega un shot adicional de espresso a tu bebida favorita.",
         price: "$1.000",
-        image: espressoImg, // Asignar una imagen si tienes una para "shot extra"
+        image: espressoImg,
         translationKeyName: "menu.products.Shot extra",
         translationKeyDescription: "menu.descriptions.Shot extra"
       },
@@ -152,9 +154,27 @@ const menuData = [
         name: "Leche vegetal",
         description: "Opción de leche vegetal para personalizar tu café.",
         price: "$900",
-        image: lecheVImg, // Asignar una imagen si tienes una para "leche vegetal"
+        image: lecheVImg,
         translationKeyName: "menu.products.Leche vegetal",
         translationKeyDescription: "menu.descriptions.Leche vegetal"
+      },
+      {
+        id: "prod-extra-syrup-avellana",
+        name: "Extra Syrup de Avellana",
+        description: "Añade un toque de avellana a tu bebida.",
+        price: "$500",
+        image: syrupAImg, // Consider adding a generic syrup image if available
+        translationKeyName: "menu.products.Extra Syrup de Avellana",
+        translationKeyDescription: "menu.descriptions.Extra Syrup de Avellana"
+      },
+      {
+        id: "prod-extra-syrup-caramel",
+        name: "Extra Syrup de Caramel",
+        description: "Añade un toque de caramelo a tu bebida.",
+        price: "$500",
+        image: syrupCImg, // Consider adding a generic syrup image if available
+        translationKeyName: "menu.products.Extra Syrup de Caramel",
+        translationKeyDescription: "menu.descriptions.Extra Syrup de Caramel"
       }
     ],
   },
@@ -176,7 +196,7 @@ const menuData = [
         id: "prod-22",
         name: "Budín de zanahoria con salud mental",
         description: "Bizcocho suave con zanahoria rallada, nueces y un toque de canela. Dulce, húmedo y lleno de sabor.",
-        price: "$4.600",
+        price: "$5.000", // Updated price
         image: budinZImg,
         translationKeyName: "menu.products.Budín de zanahoria con salud mental",
         translationKeyDescription: "menu.descriptions.Budín de zanahoria con salud mental"
@@ -194,7 +214,7 @@ const menuData = [
         id: "prod-24",
         name: "Pie de limón con Validación",
         description: "Base crocante, relleno cremoso de limón y merengue por encima. Equilibrio perfecto entre dulce y ácido.",
-        price: "$7.800",
+        price: "$6.900", // Updated price
         image: pieLImg,
         translationKeyName: "menu.products.Pie de limón con Validación",
         translationKeyDescription: "menu.descriptions.Pie de limón con Validación"
@@ -203,7 +223,7 @@ const menuData = [
         id: "prod-25",
         name: "Alfajor con Apego seguro",
         description: "Dos tapas suaves rellenas con dulce de leche cubiertas de azúcar impalpable.",
-        price: "$3.200",
+        price: "$3.800", // Updated price
         image: alfajorImg,
         translationKeyName: "menu.products.Alfajor con Apego seguro",
         translationKeyDescription: "menu.descriptions.Alfajor con Apego seguro"
@@ -212,7 +232,7 @@ const menuData = [
         id: "prod-26",
         name: "Cheesecake de frutilla con creatividad",
         description: "Tarta cremosa con base de galleta y cobertura de frutillas. Fresca y suave.",
-        price: "$8.900",
+        price: "$7.000", // Updated price
         image: cheesecakeFRImg,
         translationKeyName: "menu.products.Cheesecake de frutilla con creatividad",
         translationKeyDescription: "menu.descriptions.Cheesecake de frutilla con creatividad"
@@ -234,6 +254,24 @@ const menuData = [
         image: galletitasCCImg,
         translationKeyName: "menu.products.Galletas con chispas de chocolate Analíticas",
         translationKeyDescription: "menu.descriptions.Galletas con chispas de chocolate Analíticas"
+      },
+      {
+        id: "prod-nuevo-2",
+        name: "Pan de chocolate con Impulso",
+        description: "Delicioso pan dulce con trozos de chocolate.",
+        price: "$4.600",
+        image: panChocolateImg,
+        translationKeyName: "menu.products.Pan de chocolate con Impulso",
+        translationKeyDescription: "menu.descriptions.Pan de chocolate con Impulso"
+      },
+      {
+        id: "prod-8",
+        name: "2 Medialunas de manteca con Pasión",
+        description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.",
+        price: "$2.400",
+        image: medialunasMantecaImg,
+        translationKeyName: "menu.products.2 Medialunas de manteca con Pasión",
+        translationKeyDescription: "menu.descriptions.2 Medialunas de manteca con Pasión"
       }
     ]
   },
@@ -242,22 +280,12 @@ const menuData = [
     category: "APOYOS EMOCIONALES SALADOS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-8", name: "2 Medialunas de manteca con Pasión", description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.", price: "$2.400", image: medialunasMantecaImg, translationKeyName: "menu.products.2 Medialunas de manteca con Pasión", translationKeyDescription: "menu.descriptions.2 Medialunas de manteca con Pasión" },
-      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$2.000", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
+      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$2.400", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
       { id: "prod-10", name: "2 Medialunas de grasa con Cariño", description: "Salada, hojaldrada y dorada. Con ese sabor clásico que nunca falla.", price: "$2.300", image: medialunasGImg, translationKeyName: "menu.products.2 Medialunas de grasa con Cariño", translationKeyDescription: "menu.descriptions.2 Medialunas de grasa con Cariño" },
       { id: "prod-11", name: "Tequeños (6)con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$8.500", image: tequenosImg, translationKeyName: "menu.products.Tequeños (6)con Refuerzo Positivo", translationKeyDescription: "menu.descriptions.Tequeños (6)con Refuerzo Positivo" },
       { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$5.770", image: cachitoImg, translationKeyName: "menu.products.Cachito con Regulación", translationKeyDescription: "menu.descriptions.Cachito con Regulación" },
       { id: "prod-13", name: "Scon de queso con experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$3.700", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
-      { id: "prod-14", name: "Tostado de jamón y queso con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$7.500", image: tostadoImg, translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación", translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación" },
-      {
-        id: "prod-nuevo-2",
-        name: "Pan de chocolate con Impulso",
-        description: "Delicioso pan dulce con trozos de chocolate.",
-        price: "$4.600",
-        image: panChocolateImg, // Asigna una imagen si tienes una específica para Pan de chocolate
-        translationKeyName: "menu.products.Pan de chocolate con Impulso",
-        translationKeyDescription: "menu.descriptions.Pan de chocolate con Impulso"
-      }
+      { id: "prod-14", name: "Tostado de jamón y queso con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$7.500", image: tostadoImg, translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación", translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación" }
     ]
   },
   {
@@ -273,7 +301,7 @@ const menuData = [
     category: "BEBIDAS FRÍAS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Nuestro frapuccino combina café espresso, hielo y leche, batidos hasta lograr una textura suave y cremosa.", price: "$4.500", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
+      { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Nuestro frapuccino combina café espresso, hielo y leche, batidos hasta lograr una textura suave y cremosa.", price: "$4.900", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
       { id: "prod-30", name: "Frappé de Ananá con Desahogo", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$6.300", image: frapeAnanaImg, translationKeyName: "menu.products.Frappé de Ananá con Desahogo", translationKeyDescription: "menu.descriptions.Frappé de Ananá con Desahogo" },
       { id: "prod-32", name: "Frappé de limón Anti estrés", description: "Bebida helada, cítrica y refrescante.", price: "$5.500", image: frappeLImg, translationKeyName: "menu.products.Frappé de limón Anti estrés", translationKeyDescription: "menu.descriptions.Frappé de limón Anti estrés" },
       { id: "prod-31", name: "Frappé de frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$6.000", image: frappeFrutillaImg, translationKeyName: "menu.products.Frappé de frutilla Sensorial", translationKeyDescription: "menu.descriptions.Frappé de frutilla Sensorial" },
