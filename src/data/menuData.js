@@ -17,7 +17,7 @@ import tequenosImg from '../assets/images/products/Tequenos.png';
 import cachitoImg from '../assets/images/products/Cachito.png';
 import sconQuesoImg from '../assets/images/products/SconQueso.png';
 import tostadoImg from '../assets/images/products/Tostado.png';
-import panChocolateImg from '../assets/images/products/Chocolate.png'; // Asumo que "Chocolate.png" puede servir para Pan de chocolate
+import chocotortaImg from '../assets/images/products/Chocotorta.png'; // Asumo que "Chocolate.png" puede servir para Pan de chocolate
 
 // Importaciones de imágenes de BEBIDAS CALIENTES (todas específicas que tienes)
 import teVerdeImg from '../assets/images/products/TeVerde.png';
@@ -36,6 +36,7 @@ import alfajorImg from '../assets/images/products/Alfajor.png';
 import cheesecakeFRImg from '../assets/images/products/CheesecakeFR.png'; // Cheesecake de frutos rojos
 import rolCImg from '../assets/images/products/RolC.png'; // Rol de canela
 import galletitasCCImg from '../assets/images/products/GalletitasCC.png'; // Galletitas con chispas de chocolate
+import panChocolateImg from '../assets/images/products/PanC.png'; // Galletitas con chispas de chocolate
 
 // Importaciones de imágenes de BEBIDAS FRÍAS (todas específicas)
 import frappuccinoImg from '../assets/images/products/Frappuccino.png';
@@ -188,7 +189,7 @@ const menuData = [
         name: "Chocotorta con placer", // Nombre actualizado
         description: "Clásica torta argentina de galletas de chocolate, dulce de leche y queso crema.",
         price: "$7.200",
-        image: panChocolateImg, // Asigna una imagen si tienes una específica para Chocotorta
+        image: chocotortaImg, // Asigna una imagen si tienes una específica para Chocotorta
         translationKeyName: "menu.products.Chocotorta con placer",
         translationKeyDescription: "menu.descriptions.Chocotorta con placer"
       },
