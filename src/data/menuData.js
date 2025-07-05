@@ -29,7 +29,7 @@ import chocolateCalienteImg from '../assets/images/products/Chocolate.png';
 import matchaImg from '../assets/images/products/Matcha.png'; // Ahora sí tenemos Matcha!
 
 // Importaciones de imágenes de APOYOS EMOCIONALES DULCES (todas específicas)
-import budinZImg from '../assets/images/products/BudinZ.png'; // Budín de zanahoria
+import budinVImg from '../assets/images/products/BudinV.png'; // Budín de zanahoria
 import browieImg from '../assets/images/products/Browie.png'; // Confirmado: 'Browie.png' for Brownie
 import pieLImg from '../assets/images/products/PieL.png'; // Pie de limón
 import alfajorImg from '../assets/images/products/Alfajor.png';
@@ -193,15 +193,17 @@ const menuData = [
         translationKeyName: "menu.products.Chocotorta con placer",
         translationKeyDescription: "menu.descriptions.Chocotorta con placer"
       },
+      // 2) OBJETO REEMPLAZADO EN “APOYOS EMOCIONALES DULCES”
       {
         id: "prod-22",
-        name: "Budín de zanahoria con salud mental",
-        description: "Bizcocho suave con zanahoria rallada, nueces y un toque de canela. Dulce, húmedo y lleno de sabor.",
-        price: "$5.000", // Updated price
-        image: budinZImg,
-        translationKeyName: "menu.products.Budín de zanahoria con salud mental",
-        translationKeyDescription: "menu.descriptions.Budín de zanahoria con salud mental"
+        name: "Budín de vainilla con resiliencia",
+        description: "Bizcocho esponjoso de vainilla, suave y aromático.",
+        price: "$5.000",
+        image: budinVImg,
+        translationKeyName: "menu.products.Budín de vainilla con resiliencia",
+        translationKeyDescription: "menu.descriptions.Budín de vainilla con resiliencia"
       },
+
       {
         id: "prod-23",
         name: "Brownie con Autocuidado",
@@ -242,7 +244,7 @@ const menuData = [
         id: "prod-27",
         name: "Rol de canela con Autoestima",
         description: "Masa tierna con relleno de canela y azúcar, coronado con glaseado. Dulce, aromático y muy tentador.",
-        price: "$3.000",
+        price: "$4.100",
         image: rolCImg,
         translationKeyName: "menu.products.Rol de canela con Autoestima",
         translationKeyDescription: "menu.descriptions.Rol de canela con Autoestima"
@@ -251,7 +253,7 @@ const menuData = [
         id: "prod-28",
         name: "Galletas con chispas de chocolate Analíticas",
         description: "Clásicas, crocantes por fuera y suaves por dentro. Llenas de chispas de chocolate.",
-        price: "$3.100",
+        price: "$4.050",
         image: galletitasCCImg,
         translationKeyName: "menu.products.Galletas con chispas de chocolate Analíticas",
         translationKeyDescription: "menu.descriptions.Galletas con chispas de chocolate Analíticas"
@@ -269,7 +271,7 @@ const menuData = [
         id: "prod-8",
         name: "2 Medialunas de manteca con Pasión",
         description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.",
-        price: "$2.400",
+        price: "$1.900",
         image: medialunasMantecaImg,
         translationKeyName: "menu.products.2 Medialunas de manteca con Pasión",
         translationKeyDescription: "menu.descriptions.2 Medialunas de manteca con Pasión"
@@ -281,11 +283,10 @@ const menuData = [
     category: "APOYOS EMOCIONALES SALADOS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$2.400", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
-      { id: "prod-10", name: "2 Medialunas de grasa con Cariño", description: "Salada, hojaldrada y dorada. Con ese sabor clásico que nunca falla.", price: "$2.300", image: medialunasGImg, translationKeyName: "menu.products.2 Medialunas de grasa con Cariño", translationKeyDescription: "menu.descriptions.2 Medialunas de grasa con Cariño" },
+      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$3.900", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
       { id: "prod-11", name: "Tequeños (6)con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$8.500", image: tequenosImg, translationKeyName: "menu.products.Tequeños (6)con Refuerzo Positivo", translationKeyDescription: "menu.descriptions.Tequeños (6)con Refuerzo Positivo" },
-      { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$6.100", image: cachitoImg, translationKeyName: "menu.products.Cachito con Regulación", translationKeyDescription: "menu.descriptions.Cachito con Regulación" },
-      { id: "prod-13", name: "Scon de queso con experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$3.700", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
+      { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$7.200", image: cachitoImg, translationKeyName: "menu.products.Cachito con Regulación", translationKeyDescription: "menu.descriptions.Cachito con Regulación" },
+      { id: "prod-13", name: "Scon de queso con experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$4.400", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
       { id: "prod-14", name: "Tostado de jamón y queso con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$7.500", image: tostadoImg, translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación", translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación" }
     ]
   },
