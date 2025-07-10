@@ -45,7 +45,6 @@ import frappeFrutillaImg from '../assets/images/products/FrappeFrutilla.png';
 import frappeLImg from '../assets/images/products/FrappeL.png'; // Frappé de Limón
 import aguaImg from '../assets/images/products/Agua.png';
 import aguaGImg from '../assets/images/products/AguaG.png'; // Agua con gas
-import milkshakesImg from '../assets/images/products/Milkshakes.png';
 import lecheVImg from '../assets/images/products/LecheV.png';
 import syrupAImg from '../assets/images/products/SyrupA.png';
 import syrupCImg from '../assets/images/products/SyrupC.png';
@@ -208,7 +207,7 @@ const menuData = [
         id: "prod-23",
         name: "Brownie con Autocuidado",
         description: "Cuadrado de chocolate intenso, con textura densa y corazón suave. Ideal para los amantes del chocolate.",
-        price: "$3.700",
+        price: "$4.440",
         image: browieImg,
         translationKeyName: "menu.products.Brownie con Autocuidado",
         translationKeyDescription: "menu.descriptions.Brownie con Autocuidado"
@@ -269,12 +268,12 @@ const menuData = [
       },
       {
         id: "prod-8",
-        name: "2 Medialunas de manteca con Pasión",
+        name: "Medialuna de manteca con Pasión",
         description: "Dulce, hojaldrada y brillante. Perfecta para acompañar tu café.",
         price: "$1.900",
         image: medialunasMantecaImg,
-        translationKeyName: "menu.products.2 Medialunas de manteca con Pasión",
-        translationKeyDescription: "menu.descriptions.2 Medialunas de manteca con Pasión"
+        translationKeyName: "menu.products.Medialuna de manteca con Pasión",
+        translationKeyDescription: "menu.descriptions.Medialuna de manteca con Pasión"
       }
     ]
   },
@@ -307,7 +306,6 @@ const menuData = [
       { id: "prod-30", name: "Frappé de Ananá con Desahogo", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$6.300", image: frapeAnanaImg, translationKeyName: "menu.products.Frappé de Ananá con Desahogo", translationKeyDescription: "menu.descriptions.Frappé de Ananá con Desahogo" },
       { id: "prod-32", name: "Frappé de limón Anti estrés", description: "Bebida helada, cítrica y refrescante.", price: "$5.500", image: frappeLImg, translationKeyName: "menu.products.Frappé de limón Anti estrés", translationKeyDescription: "menu.descriptions.Frappé de limón Anti estrés" },
       { id: "prod-31", name: "Frappé de frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$6.000", image: frappeFrutillaImg, translationKeyName: "menu.products.Frappé de frutilla Sensorial", translationKeyDescription: "menu.descriptions.Frappé de frutilla Sensorial" },
-      { id: "prod-35", name: "Milkshake de chocolate con Serotonina", description: "Batido frío con leche y mucho chocolate. Cremoso y dulce.", price: "$3.100", image: milkshakesImg, translationKeyName: "menu.products.Milkshake de chocolate con Serotonina", translationKeyDescription: "menu.descriptions.Milkshake de chocolate con Serotonina" },
       { id: "prod-34", name: "Agua con gas sin Represión", description: "Burbujas de liberación y frescura.", price: "$2.300", image: aguaGImg, translationKeyName: "menu.products.Agua con gas sin Represión", translationKeyDescription: "menu.descriptions.Agua con gas sin Represión" },
       { id: "prod-33", name: "Agua sin gas con Regulación", description: "Hidratación simple para encontrar tu equilibrio.", price: "$2.000", image: aguaImg, translationKeyName: "menu.products.Agua sin gas con Regulación", translationKeyDescription: "menu.descriptions.Agua sin gas con Regulación" }
     ]
