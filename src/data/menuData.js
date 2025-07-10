@@ -197,7 +197,7 @@ const menuData = [
         id: "prod-22",
         name: "Budín de vainilla con resiliencia",
         description: "Bizcocho esponjoso de vainilla, suave y aromático.",
-        price: "$5.000",
+        price: "$3.900",
         image: budinVImg,
         translationKeyName: "menu.products.Budín de vainilla con resiliencia",
         translationKeyDescription: "menu.descriptions.Budín de vainilla con resiliencia"
@@ -260,7 +260,7 @@ const menuData = [
       {
         id: "prod-nuevo-2",
         name: "Pan de chocolate con Impulso",
-        description: "Delicioso pan dulce con trozos de chocolate.",
+        description: "Masa brioche, Relleno con un trozo de chocolate semiamargo de calidad y top de salsa de chocolate", // <-- DESCRIPCIÓN ACTUALIZADA
         price: "$4.600",
         image: panChocolateImg,
         translationKeyName: "menu.products.Pan de chocolate con Impulso",
@@ -285,7 +285,7 @@ const menuData = [
       { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$3.900", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
       { id: "prod-11", name: "Tequeños (6)con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$8.500", image: tequenosImg, translationKeyName: "menu.products.Tequeños (6)con Refuerzo Positivo", translationKeyDescription: "menu.descriptions.Tequeños (6)con Refuerzo Positivo" },
       { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$7.200", image: cachitoImg, translationKeyName: "menu.products.Cachito con Regulación", translationKeyDescription: "menu.descriptions.Cachito con Regulación" },
-      { id: "prod-13", name: "Scon de queso con experiencia", description: "Sabiduría y sabor en una combinación perfecta.", price: "$4.400", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
+      { id: "prod-13", name: "Scon de queso con experiencia", description: "Masa delicada y esponjosa, con suave manteca con queso y un toque de parmesano reggiano. Textura suave por dentro, dorado por fuera.", price: "$4.400", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
       { id: "prod-14", name: "Tostado de jamón y queso con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$7.500", image: tostadoImg, translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación", translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación" }
     ]
   },
@@ -319,7 +319,7 @@ const menuData = [
       { id: "prod-15", name: "Té verde con Bienestar", description: "Infusión suave y natural. Liviano y con un toque herbal.", price: "$3.500", image: teVerdeImg, translationKeyName: "menu.products.Té verde con Bienestar", translationKeyDescription: "menu.descriptions.Té verde con Bienestar" },
       { id: "prod-16", name: "Te negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$3.500", image: teNegroImg, translationKeyName: "menu.products.Te negro con Alma", translationKeyDescription: "menu.descriptions.Te negro con Alma" },
       { id: "prod-17", name: "Té de menta con Alegría", description: "Refrescante y aromático. Perfecto para después de comer o para relajar.", price: "$3.500", image: teMentaImg, translationKeyName: "menu.products.Té de menta con Alegría", translationKeyDescription: "menu.descriptions.Té de menta con Alegría" },
-      { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$3.650", image: matchaImg, translationKeyName: "menu.products.Matcha con Concentración", translationKeyDescription: "menu.descriptions.Matcha con Concentración" },
+      { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$3.900", image: matchaImg, translationKeyName: "menu.products.Matcha con Concentración", translationKeyDescription: "menu.descriptions.Matcha con Concentración" },
       { id: "prod-18", name: "Té Chai con Paz", description: "Infusión especiada con notas de canela, clavo y jengibre. Aromático y cálido.", price: "$3.500", image: teChaiImg, translationKeyName: "menu.products.Té Chai con Paz", translationKeyDescription: "menu.descriptions.Té Chai con Paz" },
       { id: "prod-20", name: "Mate cocido con abrazos", description: "Infusión tradicional, suave y reconfortante. Sabor a casa.", price: "$3.500", image: mateCImg, translationKeyName: "menu.products.Mate cocido con abrazos", translationKeyDescription: "menu.descriptions.Mate cocido con abrazos" }
     ]
