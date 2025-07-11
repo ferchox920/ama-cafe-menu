@@ -216,7 +216,7 @@ const menuData = [
         id: "prod-24",
         name: "Pie de limón con Validación",
         description: "Base crocante, relleno cremoso de limón y merengue por encima. Equilibrio perfecto entre dulce y ácido.",
-        price: "$6.900", // Updated price
+        price: "$7.700", // Updated price
         image: pieLImg,
         translationKeyName: "menu.products.Pie de limón con Validación",
         translationKeyDescription: "menu.descriptions.Pie de limón con Validación"
@@ -225,7 +225,7 @@ const menuData = [
         id: "prod-25",
         name: "Alfajor con Apego seguro",
         description: "Dos tapas suaves rellenas con dulce de leche cubiertas de azúcar impalpable.",
-        price: "$3.800", // Updated price
+        price: "$4.200", // Updated price
         image: alfajorImg,
         translationKeyName: "menu.products.Alfajor con Apego seguro",
         translationKeyDescription: "menu.descriptions.Alfajor con Apego seguro"
@@ -234,7 +234,7 @@ const menuData = [
         id: "prod-26",
         name: "Cheesecake de frutilla con creatividad",
         description: "Tarta cremosa con base de galleta y cobertura de frutillas. Fresca y suave.",
-        price: "$7.000", // Updated price
+        price: "$8.500", // Updated price
         image: cheesecakeFRImg,
         translationKeyName: "menu.products.Cheesecake de frutilla con creatividad",
         translationKeyDescription: "menu.descriptions.Cheesecake de frutilla con creatividad"
