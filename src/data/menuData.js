@@ -428,7 +428,15 @@ const menuData = [
     items: [
       { id: "prod-21", name: "Chocolate caliente con Claridad", description: "Dulzura que ilumina tus ideas.", price: "$4.000", image: chocolateCalienteImg, translationKeyName: "menu.products.Chocolate caliente con Claridad", translationKeyDescription: "menu.descriptions.Chocolate caliente con Claridad" },
       { id: "prod-15", name: "Té verde con Bienestar", description: "Infusión suave y natural. Liviano y con un toque herbal.", price: "$3.500", image: teVerdeImg, translationKeyName: "menu.products.Té verde con Bienestar", translationKeyDescription: "menu.descriptions.Té verde con Bienestar" },
-      { id: "prod-16", name: "Te negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$3.500", image: teNegroImg, translationKeyName: "menu.products.Te negro con Alma", translationKeyDescription: "menu.descriptions.Té negro con Alma" },
+      {
+        id: "prod-16",
+        name: "Té negro con Alma",
+        description: "Sabor intenso y clásico. Ideal para quien busca carácter en cada sorbo.",
+        price: "$3.500",
+        image: teNegroImg,
+        translationKeyName: "menu.products.Té negro con Alma",
+        translationKeyDescription: "menu.descriptions.Té negro con Alma"
+      },
       { id: "prod-17", name: "Té de menta con Alegría", description: "Refrescante y aromático. Perfecto para después de comer o para relajar.", price: "$3.500", image: teMentaImg, translationKeyName: "menu.products.Té de menta con Alegría", translationKeyDescription: "menu.descriptions.Té de menta con Alegría" },
       { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$3.900", image: matchaImg, translationKeyName: "menu.products.Matcha con Concentración", translationKeyDescription: "menu.descriptions.Matcha con Concentración" },
       { id: "prod-18", name: "Té Chai con Paz", description: "Infusión especiada con notas de canela, clavo y jengibre. Aromático y cálido.", price: "$3.500", image: teChaiImg, translationKeyName: "menu.products.Té Chai con Paz", translationKeyDescription: "menu.descriptions.Té Chai con Paz" },
