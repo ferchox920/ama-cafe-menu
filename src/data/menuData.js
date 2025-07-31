@@ -1,6 +1,6 @@
 // src/data/menuData.js
 
-// Importaciones de imágenes de CAFÉS Terapéuticos (todas específicas)
+// Importaciones de imágenes de CAFÉS TerapéutICOS (todas específicas)
 import espressoImg from '../assets/images/products/Espresso.png';
 import americanoImg from '../assets/images/products/Americano.png';
 import cappuccinoImg from '../assets/images/products/Capuccino.png'; // Confirmado: 'Capuccino.png'
@@ -17,45 +17,49 @@ import tequenosImg from '../assets/images/products/Tequenos.png';
 import cachitoImg from '../assets/images/products/Cachito.png';
 import sconQuesoImg from '../assets/images/products/SconQueso.png';
 import tostadoImg from '../assets/images/products/Tostado.png';
-import chocotortaImg from '../assets/images/products/Chocotorta.png'; // Asumo que "Chocolate.png" puede servir para Pan de chocolate
+import chocotortaImg from '../assets/images/products/Chocotorta.png'; // Chocotorta
 
 // Importaciones de imágenes de BEBIDAS CALIENTES (todas específicas que tienes)
 import teVerdeImg from '../assets/images/products/TeVerde.png';
 import teNegroImg from '../assets/images/products/TeNegro.png';
 import teMentaImg from '../assets/images/products/TeMenta.png';
 import teChaiImg from '../assets/images/products/TeC.png'; // 'TeC.png' para Té de Chai
-import mateCImg from '../assets/images/products/MateC.png'; // 'MateC.png' para Hierba para mate con Vínculos
+import mateCImg from '../assets/images/products/MateC.png'; // 'MateC.png' para Mate cocido
 import chocolateCalienteImg from '../assets/images/products/Chocolate.png';
-import matchaImg from '../assets/images/products/Matcha.png'; // Ahora sí tenemos Matcha!
+import matchaImg from '../assets/images/products/Matcha.png'; // Matcha
 
 // Importaciones de imágenes de APOYOS EMOCIONALES DULCES (todas específicas)
 import budinVImg from '../assets/images/products/BudinV.png'; // Budín de zanahoria
-import browieImg from '../assets/images/products/Browie.png'; // Confirmado: 'Browie.png' for Brownie
-import pieLImg from '../assets/images/products/PieL.png'; // Pie de limón
+import browieImg from '../assets/images/products/Browie.png'; // Brownie
+import pieLImg from '../assets/images/products/PieL.png';    // Pie de limón
 import alfajorImg from '../assets/images/products/Alfajor.png';
 import cheesecakeFRImg from '../assets/images/products/CheesecakeFR.png'; // Cheesecake de frutos rojos
 import rolCImg from '../assets/images/products/RolC.png'; // Rol de canela
 import galletitasCCImg from '../assets/images/products/GalletitasCC.png'; // Galletitas con chispas de chocolate
-import panChocolateImg from '../assets/images/products/PanC.png'; // Galletitas con chispas de chocolate
+import panChocolateImg from '../assets/images/products/PanC.png'; // Pan de chocolate
 
 // Importaciones de imágenes de BEBIDAS FRÍAS (todas específicas)
 import frappuccinoImg from '../assets/images/products/Frappuccino.png';
 import frapeAnanaImg from '../assets/images/products/FrapeAnana.png';
 import frappeFrutillaImg from '../assets/images/products/FrappeFrutilla.png';
-import frappeLImg from '../assets/images/products/FrappeL.png'; // Frappé de Limón
+import frappeLImg from '../assets/images/products/FrappeL.png'; // Frappé de limón
 import aguaImg from '../assets/images/products/Agua.png';
 import aguaGImg from '../assets/images/products/AguaG.png'; // Agua con gas
 import lecheVImg from '../assets/images/products/LecheV.png';
 import syrupAImg from '../assets/images/products/SyrupA.png';
 import syrupCImg from '../assets/images/products/SyrupC.png';
 
+// Importaciones de imágenes nuevas para los productos solicitados
+import chipaImg from '../assets/images/products/Chipa.png';       // Chipa con compañía
+import budinZImg from '../assets/images/products/BudinZ.png';     // Budín de chocolate
+import budinCImg from '../assets/images/products/BudinC.png';     // Budín de chocolate
 
 // Importamos el isotipo crema (verificar ruta si no está en 'images/products')
 import isotipoCrema from '../assets/images/isotipo_crema.svg'; // o .png si es el caso
 
 const menuData = [
   {
-    id: "cafesTerapeuticos", // ID de la categoría para traducción
+    id: "cafesTerapeuticos",
     category: "CAFES TERAPEUTICOS",
     isotipo: isotipoCrema,
     items: [
@@ -163,7 +167,7 @@ const menuData = [
         name: "Extra Syrup de Avellana",
         description: "Añade un toque de avellana a tu bebida.",
         price: "$500",
-        image: syrupAImg, // Consider adding a generic syrup image if available
+        image: syrupAImg,
         translationKeyName: "menu.products.Extra Syrup de Avellana",
         translationKeyDescription: "menu.descriptions.Extra Syrup de Avellana"
       },
@@ -172,27 +176,45 @@ const menuData = [
         name: "Extra Syrup de Caramel",
         description: "Añade un toque de caramelo a tu bebida.",
         price: "$500",
-        image: syrupCImg, // Consider adding a generic syrup image if available
+        image: syrupCImg,
         translationKeyName: "menu.products.Extra Syrup de Caramel",
         translationKeyDescription: "menu.descriptions.Extra Syrup de Caramel"
+      },
+      // Nuevos productos de CAFÉS TERAPÉUTICOS
+      {
+        id: "prod-magic-energia",
+        name: "Magic con energía",
+        description: "Doble espresso en vaso pequeño con leche.",
+        price: "$3.600",
+        image: espressoImg,
+        translationKeyName: "menu.products.Magic con energía",
+        translationKeyDescription: "menu.descriptions.Magic con energía"
+      },
+      {
+        id: "prod-lungo-ilusion",
+        name: "Lungo con ilusión",
+        description: "Espresso simple con agua en taza pequeña.",
+        price: "$3.300",
+        image: americanoImg,
+        translationKeyName: "menu.products.Lungo con ilusión",
+        translationKeyDescription: "menu.descriptions.Lungo con ilusión"
       }
     ],
   },
   {
-    id: "apoyosDulces", // ID de la categoría para traducción
+    id: "apoyosDulces",
     category: "APOYOS EMOCIONALES DULCES",
     isotipo: isotipoCrema,
     items: [
-      {
-        id: "prod-nuevo-1",
-        name: "Chocotorta con placer", // Nombre actualizado
-        description: "Clásica torta argentina de galletas de chocolate, dulce de leche y queso crema.",
-        price: "$7.200",
-        image: chocotortaImg, // Asigna una imagen si tienes una específica para Chocotorta
-        translationKeyName: "menu.products.Chocotorta con placer",
-        translationKeyDescription: "menu.descriptions.Chocotorta con placer"
-      },
-      // 2) OBJETO REEMPLAZADO EN “APOYOS EMOCIONALES DULCES”
+      // {
+      //   id: "prod-nuevo-1",
+      //   name: "Chocotorta con placer",
+      //   description: "Clásica torta argentina de galletas de chocolate, dulce de leche y queso crema.",
+      //   price: "$7.200",
+      //   image: chocotortaImg,
+      //   translationKeyName: "menu.products.Chocotorta con placer",
+      //   translationKeyDescription: "menu.descriptions.Chocotorta con placer"
+      // },
       {
         id: "prod-22",
         name: "Budín de vainilla con resiliencia",
@@ -202,7 +224,6 @@ const menuData = [
         translationKeyName: "menu.products.Budín de vainilla con resiliencia",
         translationKeyDescription: "menu.descriptions.Budín de vainilla con resiliencia"
       },
-
       {
         id: "prod-23",
         name: "Brownie con Autocuidado",
@@ -216,7 +237,7 @@ const menuData = [
         id: "prod-24",
         name: "Pie de limón con Validación",
         description: "Base crocante, relleno cremoso de limón y merengue por encima. Equilibrio perfecto entre dulce y ácido.",
-        price: "$7.700", // Updated price
+        price: "$7.700",
         image: pieLImg,
         translationKeyName: "menu.products.Pie de limón con Validación",
         translationKeyDescription: "menu.descriptions.Pie de limón con Validación"
@@ -225,7 +246,7 @@ const menuData = [
         id: "prod-25",
         name: "Alfajor con Apego seguro",
         description: "Dos tapas suaves rellenas con dulce de leche cubiertas de azúcar impalpable.",
-        price: "$4.200", // Updated price
+        price: "$4.200",
         image: alfajorImg,
         translationKeyName: "menu.products.Alfajor con Apego seguro",
         translationKeyDescription: "menu.descriptions.Alfajor con Apego seguro"
@@ -234,7 +255,7 @@ const menuData = [
         id: "prod-26",
         name: "Cheesecake de frutilla con creatividad",
         description: "Tarta cremosa con base de galleta y cobertura de frutillas. Fresca y suave.",
-        price: "$8.500", // Updated price
+        price: "$8.500",
         image: cheesecakeFRImg,
         translationKeyName: "menu.products.Cheesecake de frutilla con creatividad",
         translationKeyDescription: "menu.descriptions.Cheesecake de frutilla con creatividad"
@@ -260,11 +281,30 @@ const menuData = [
       {
         id: "prod-nuevo-2",
         name: "Pan de chocolate con Impulso",
-        description: "Masa brioche, Relleno con un trozo de chocolate semiamargo de calidad y top de salsa de chocolate", // <-- DESCRIPCIÓN ACTUALIZADA
+        description: "Masa brioche, relleno con un trozo de chocolate semiamargo de calidad y top de salsa de chocolate.",
         price: "$4.600",
         image: panChocolateImg,
         translationKeyName: "menu.products.Pan de chocolate con Impulso",
         translationKeyDescription: "menu.descriptions.Pan de chocolate con Impulso"
+      },
+      // Nuevos productos de APOYOS EMOCIONALES DULCES
+      {
+        id: "prod-nuevo-3",
+        name: "Budín de zanahoria con salud mental",
+        description: "Budín de zanahoria esponjoso que nutre cuerpo y mente.",
+        price: "$5.000",
+        image: budinZImg,
+        translationKeyName: "menu.products.Budín de zanahoria con salud mental",
+        translationKeyDescription: "menu.descriptions.Budín de zanahoria con salud mental"
+      },
+      {
+        id: "prod-nuevo-4",
+        name: "Budín de chocolate con placer",
+        description: "Bizcocho de chocolate suave y apetitoso.",
+        price: "$4.900",
+        image: budinCImg,
+        translationKeyName: "menu.products.Budín de chocolate con placer",
+        translationKeyDescription: "menu.descriptions.Budín de chocolate con placer"
       },
       {
         id: "prod-8",
@@ -278,46 +318,117 @@ const menuData = [
     ]
   },
   {
-    id: "apoyosSalados", // ID de la categoría para traducción
+    id: "apoyosSalados",
     category: "APOYOS EMOCIONALES SALADOS",
     isotipo: isotipoCrema,
     items: [
-      { id: "prod-9", name: "Medialuna de jamón y queso con Amor", description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.", price: "$3.900", image: medialunaJQImg, translationKeyName: "menu.products.Medialuna de jamón y queso con Amor", translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor" },
-      { id: "prod-11", name: "Tequeños (6)con Refuerzo Positivo", description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.", price: "$8.500", image: tequenosImg, translationKeyName: "menu.products.Tequeños (6)con Refuerzo Positivo", translationKeyDescription: "menu.descriptions.Tequeños (6)con Refuerzo Positivo" },
-      { id: "prod-12", name: "Cachito con Regulación", description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.", price: "$7.200", image: cachitoImg, translationKeyName: "menu.products.Cachito con Regulación", translationKeyDescription: "menu.descriptions.Cachito con Regulación" },
-      { id: "prod-13", name: "Scon de queso con experiencia", description: "Masa delicada y esponjosa, con suave manteca con queso y un toque de parmesano reggiano. Textura suave por dentro, dorado por fuera.", price: "$4.400", image: sconQuesoImg, translationKeyName: "menu.products.Scon de queso con experiencia", translationKeyDescription: "menu.descriptions.Scon de queso con experiencia" },
-      { id: "prod-14", name: "Tostado de jamón y queso con Imaginación", description: "Pan crocante con jamón y queso fundido.", price: "$7.500", image: tostadoImg, translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación", translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación" }
+      {
+        id: "prod-9",
+        name: "Medialuna de jamón y queso con Amor",
+        description: "Masa suave con relleno salado. Caliente y sabrosa, ideal para cualquier momento del día.",
+        price: "$3.900",
+        image: medialunaJQImg,
+        translationKeyName: "menu.products.Medialuna de jamón y queso con Amor",
+        translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor"
+      },
+      {
+        id: "prod-11",
+        name: "Tequeños (6) con Refuerzo Positivo",
+        description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.",
+        price: "$8.500",
+        image: tequenosImg,
+        translationKeyName: "menu.products.Tequeños (6) con Refuerzo Positivo",
+        translationKeyDescription: "menu.descriptions.Tequeños (6) con Refuerzo Positivo"
+      },
+      {
+        id: "prod-12",
+        name: "Cachito con Regulación",
+        description: "Pan suave en forma de cuernito, relleno de jamón. Un clásico venezolano.",
+        price: "$7.200",
+        image: cachitoImg,
+        translationKeyName: "menu.products.Cachito con Regulación",
+        translationKeyDescription: "menu.descriptions.Cachito con Regulación"
+      },
+      {
+        id: "prod-13",
+        name: "Scon de queso con experiencia",
+        description: "Masa delicada y esponjosa, con suave manteca y queso, un toque de parmesano reggiano. Textura suave por dentro, dorado por fuera.",
+        price: "$4.700",
+        image: sconQuesoImg,
+        translationKeyName: "menu.products.Scon de queso con experiencia",
+        translationKeyDescription: "menu.descriptions.Scon de queso con experiencia"
+      },
+      {
+        id: "prod-14",
+        name: "Tostado de jamón y queso con Imaginación",
+        description: "Pan crocante con jamón y queso fundido.",
+        price: "$7.500",
+        image: tostadoImg,
+        translationKeyName: "menu.products.Tostado de jamón y queso con Imaginación",
+        translationKeyDescription: "menu.descriptions.Tostado de jamón y queso con Imaginación"
+      },
+      // Nuevo producto de APOYOS EMOCIONALES SALADOS
+      {
+        id: "prod-10",
+        name: "Chipa con compañía",
+        description: "Pan suave, crocante y lleno de queso.",
+        price: "$3.900",
+        image: chipaImg,
+        translationKeyName: "menu.products.Chipa con compañía",
+        translationKeyDescription: "menu.descriptions.Chipa con compañía"
+      }
     ]
   },
   {
-    id: "noCafe", // ID de la categoría para traducción
+    id: "noCafe",
     category: "PARA LOS “NO TOMO CAFÉ”",
-    isotipo: isotipoCrema, // Mantener isotipo
-    items: [], // Vaciar el array de items, ya que no contendrá productos directamente
-    isSectionTitle: true, // <--- PROPIEDAD CLAVE: Indicar que es un título de sección
-    translationKey: "menu.categories.noCafe" // Clave para la traducción del título de sección
+    isotipo: isotipoCrema,
+    items: [],
+    isSectionTitle: true,
+    translationKey: "menu.categories.noCafe"
   },
   {
-    id: "bebidasFrias", // ID de la categoría para traducción
+    id: "bebidasFrias",
     category: "BEBIDAS FRÍAS",
     isotipo: isotipoCrema,
     items: [
       { id: "prod-29", name: "Frappuccino de Escape emocional", description: "Nuestro frapuccino combina café espresso, hielo y leche, batidos hasta lograr una textura suave y cremosa.", price: "$4.900", image: frappuccinoImg, translationKeyName: "menu.products.Frappuccino de Escape emocional", translationKeyDescription: "menu.descriptions.Frappuccino de Escape emocional" },
-      { id: "prod-30", name: "Frappé de Ananá con Desahogo", description: "Bebida con pulpa frutal de ananá y sabor tropical.", price: "$6.300", image: frapeAnanaImg, translationKeyName: "menu.products.Frappé de Ananá con Desahogo", translationKeyDescription: "menu.descriptions.Frappé de Ananá con Desahogo" },
-      { id: "prod-32", name: "Frappé de limón Anti estrés", description: "Bebida helada, cítrica y refrescante.", price: "$5.500", image: frappeLImg, translationKeyName: "menu.products.Frappé de limón Anti estrés", translationKeyDescription: "menu.descriptions.Frappé de limón Anti estrés" },
-      { id: "prod-31", name: "Frappé de frutilla Sensorial", description: "Bebida fría con pulpa de frutilla y sabor dulce.", price: "$6.000", image: frappeFrutillaImg, translationKeyName: "menu.products.Frappé de frutilla Sensorial", translationKeyDescription: "menu.descriptions.Frappé de frutilla Sensorial" },
-      { id: "prod-34", name: "Agua con gas sin Represión", description: "Burbujas de liberación y frescura.", price: "$2.300", image: aguaGImg, translationKeyName: "menu.products.Agua con gas sin Represión", translationKeyDescription: "menu.descriptions.Agua con gas sin Represión" },
+      {
+        id: "prod-30",
+        name: "Licuado de Ananá con Desahogo",
+        description: "Bebida con pulpa frutal de ananá y sabor tropical.",
+        price: "$6.300",
+        image: frapeAnanaImg,
+        translationKeyName: "menu.products.Licuado de Ananá con Desahogo",
+        translationKeyDescription: "menu.descriptions.Licuado de Ananá con Desahogo"
+      }, {
+        id: "prod-32",
+        name: "Limonada anti estrés",
+        description: "Bebida helada, cítrica y refrescante.",
+        price: "$5.500",
+        image: frappeLImg,
+        translationKeyName: "menu.products.Limonada anti estrés",
+        translationKeyDescription: "menu.descriptions.Limonada anti estrés"
+      }, {
+        id: "prod-31",
+        name: "Licuado de frutilla Sensorial",
+        description: "Bebida fría con pulpa de frutilla y sabor dulce.",
+        price: "$6.000",
+        image: frappeFrutillaImg,
+        translationKeyName: "menu.products.Licuado de frutilla Sensorial",
+        translationKeyDescription: "menu.descriptions.Licuado de frutilla Sensorial"
+      }, { id: "prod-34", name: "Agua con gas sin Represión", description: "Burbujas de liberación y frescura.", price: "$2.300", image: aguaGImg, translationKeyName: "menu.products.Agua con gas sin Represión", translationKeyDescription: "menu.descriptions.Agua con gas sin Represión" },
       { id: "prod-33", name: "Agua sin gas con Regulación", description: "Hidratación simple para encontrar tu equilibrio.", price: "$2.000", image: aguaImg, translationKeyName: "menu.products.Agua sin gas con Regulación", translationKeyDescription: "menu.descriptions.Agua sin gas con Regulación" }
     ]
   },
   {
-    id: "bebidasCalientes", // ID de la categoría para traducción
+    id: "bebidasCalientes",
     category: "BEBIDAS CALIENTES",
     isotipo: isotipoCrema,
     items: [
       { id: "prod-21", name: "Chocolate caliente con Claridad", description: "Dulzura que ilumina tus ideas.", price: "$4.000", image: chocolateCalienteImg, translationKeyName: "menu.products.Chocolate caliente con Claridad", translationKeyDescription: "menu.descriptions.Chocolate caliente con Claridad" },
       { id: "prod-15", name: "Té verde con Bienestar", description: "Infusión suave y natural. Liviano y con un toque herbal.", price: "$3.500", image: teVerdeImg, translationKeyName: "menu.products.Té verde con Bienestar", translationKeyDescription: "menu.descriptions.Té verde con Bienestar" },
-      { id: "prod-16", name: "Te negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$3.500", image: teNegroImg, translationKeyName: "menu.products.Te negro con Alma", translationKeyDescription: "menu.descriptions.Te negro con Alma" },
+      { id: "prod-16", name: "Te negro con Alma", description: "De sabor intenso y clásico. Ideal para los que buscan una infusión con carácter.", price: "$3.500", image: teNegroImg, translationKeyName: "menu.products.Te negro con Alma", translationKeyDescription: "menu.descriptions.Té negro con Alma" },
       { id: "prod-17", name: "Té de menta con Alegría", description: "Refrescante y aromático. Perfecto para después de comer o para relajar.", price: "$3.500", image: teMentaImg, translationKeyName: "menu.products.Té de menta con Alegría", translationKeyDescription: "menu.descriptions.Té de menta con Alegría" },
       { id: "prod-19", name: "Matcha con Concentración", description: "Té verde en polvo de sabor intenso y textura cremosa. Energizante y diferente.", price: "$3.900", image: matchaImg, translationKeyName: "menu.products.Matcha con Concentración", translationKeyDescription: "menu.descriptions.Matcha con Concentración" },
       { id: "prod-18", name: "Té Chai con Paz", description: "Infusión especiada con notas de canela, clavo y jengibre. Aromático y cálido.", price: "$3.500", image: teChaiImg, translationKeyName: "menu.products.Té Chai con Paz", translationKeyDescription: "menu.descriptions.Té Chai con Paz" },
