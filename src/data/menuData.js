@@ -331,14 +331,14 @@ const menuData = [
         translationKeyName: "menu.products.Medialuna de jamón y queso con Amor",
         translationKeyDescription: "menu.descriptions.Medialuna de jamón y queso con Amor"
       },
-      {
+       {
         id: "prod-11",
         name: "Tequeños (6) con Refuerzo Positivo",
         description: "Palitos de masa frita rellenos de queso. Dorados, crocantes y adictivos.",
         price: "$8.500",
         image: tequenosImg,
-        translationKeyName: "menu.products.Tequeños (6) con Refuerzo Positivo",
-        translationKeyDescription: "menu.descriptions.Tequeños (6) con Refuerzo Positivo"
+        translationKeyName: "menu.products.Tequeños 6 con Refuerzo Positivo",
+        translationKeyDescription: "menu.descriptions.Tequeños 6 con Refuerzo Positivo"
       },
       {
         id: "prod-12",
