@@ -397,7 +397,7 @@ const menuData = [
         id: "prod-30",
         name: "Licuado de Ananá con Desahogo",
         description: "Bebida con pulpa frutal de ananá y sabor tropical.",
-        price: "$6.300",
+        price: "$5.200",
         image: frapeAnanaImg,
         translationKeyName: "menu.products.Licuado de Ananá con Desahogo",
         translationKeyDescription: "menu.descriptions.Licuado de Ananá con Desahogo"
@@ -405,7 +405,7 @@ const menuData = [
         id: "prod-32",
         name: "Limonada anti estrés",
         description: "Bebida helada, cítrica y refrescante.",
-        price: "$5.500",
+        price: "$5.000",
         image: frappeLImg,
         translationKeyName: "menu.products.Limonada anti estrés",
         translationKeyDescription: "menu.descriptions.Limonada anti estrés"
@@ -413,7 +413,7 @@ const menuData = [
         id: "prod-31",
         name: "Licuado de frutilla Sensorial",
         description: "Bebida fría con pulpa de frutilla y sabor dulce.",
-        price: "$6.000",
+        price: "$5.500",
         image: frappeFrutillaImg,
         translationKeyName: "menu.products.Licuado de frutilla Sensorial",
         translationKeyDescription: "menu.descriptions.Licuado de frutilla Sensorial"
